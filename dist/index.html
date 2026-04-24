@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Profesional | Andrés Leonardo Pinto Cristancho</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/assets/index-vwnkXZrH.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DN8uFfKI.css">
+  </head>
+  <body>
+    <div id="env-wrapper" class="ai-core-env">
+      <canvas id="neural-particles"></canvas>
+      
+      <div id="app" class="dashboard-root">
+        <!-- TOP NAV BAR REPLACING SIDEBAR -->
+        <nav class="top-nav-bar">
+          <div class="logo-container">
+            <div class="user-avatar">
+              <img src="/foto.jpg" alt="">
+            </div>
+            <div class="logo-text">
+              <span class="user-name">ANDRÉS PINTO</span>
+              <span class="user-role">ENGINEER CORE v2.0</span>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#" class="nav-item active" id="nav-profile">MI HOJA DE VIDA</a>
+            <a href="#" class="nav-item" id="nav-fiscalia">AGENTE: FISCALÍA & CTI</a>
+            <a href="#" class="nav-item" id="nav-judicial">AGENTE: RAMA JUDICIAL</a>
+            <a href="#" class="nav-item" id="nav-it">SOPORTE IT</a>
+          </div>
+        </nav>
+
+        <main class="main-panel">
+
+          <section class="portfolio-content">
+            <div class="hardware-layer">
+              <!-- FISCALIA & CTI VIEW -->
+              <div id="view-fiscalia" class="content-view hidden">
+                <div class="grid-layout">
+                  <div class="ai-brain-node gema-action" data-id="gem-1" data-gema-type="cti">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">ESTRUCTURADOR FPJ</span>
+                    <div class="hologram-data">
+                      <h3>ASISTENTE CTI</h3>
+                      <p>Generación automatizada de Formatos de Policía Judicial a partir de relatos desordenados y recolección en campo.</p>
+                      <span class="status-online">ESTADO: OPERACIONAL</span>
+                    </div>
+                  </div>
+
+                  <div class="ai-brain-node gema-action" data-id="gem-f2" data-gema-type="cti_transcripciones">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon" style="filter: hue-rotate(180deg) drop-shadow(0 0 15px var(--accent-blue));">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">ANALISTA TRANSCRIPCIONES</span>
+                    <div class="hologram-data">
+                      <h3>EXTRACTOR TEAMS</h3>
+                      <p>Análisis forense de transcripciones de audiencias. Detecta contradicciones y extrae línea temporal de coartadas.</p>
+                      <span class="status-offline">ESTADO: EN CONSTRUCCIÓN</span>
+                    </div>
+                  </div>
+
+                  <div class="ai-brain-node gema-action" data-id="gem-f3" data-gema-type="cti_custodia">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon" style="filter: hue-rotate(180deg) drop-shadow(0 0 15px var(--accent-blue));">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">AUDITOR CUSTODIA</span>
+                    <div class="hologram-data">
+                      <h3>NOTEBOOK LM RAG</h3>
+                      <p>Cruza reportes de campo vs el Manual de Cadena de Custodia para alertar nulidades e irregularidades probatorias.</p>
+                      <span class="status-offline">ESTADO: EN CONSTRUCCIÓN</span>
+                    </div>
+                  </div>
+
+                  <div class="ai-brain-node gema-action" data-id="gem-f4" data-gema-type="cti_ordenes">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon" style="filter: hue-rotate(180deg) drop-shadow(0 0 15px var(--accent-blue));">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">PROYECTOR DE ÓRDENES</span>
+                    <div class="hologram-data">
+                      <h3>FISCALÍA BOT</h3>
+                      <p>Redacta órdenes a policía judicial (allanamientos, interceptaciones) con fundamento legal exacto a partir de comandos verbales.</p>
+                      <span class="status-offline">ESTADO: EN CONSTRUCCIÓN</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RAMA JUDICIAL VIEW -->
+              <div id="view-judicial" class="content-view hidden">
+                <div class="grid-layout">
+                  <div class="ai-brain-node gema-action" data-id="gem-2" data-gema-type="law">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">ANALISTA JURISPRUDENCIA</span>
+                    <div class="hologram-data">
+                      <h3>JUEZ AUXILIAR IA</h3>
+                      <p>Análisis acelerado de sentencias, identificando hechos, problema jurídico y ratio decidendi al instante.</p>
+                      <span class="status-online">ESTADO: OPERACIONAL</span>
+                    </div>
+                  </div>
+
+                  <div class="ai-brain-node gema-action" data-id="gem-3" data-gema-type="liquidador">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">LIQUIDADOR NORMATIVO</span>
+                    <div class="hologram-data">
+                      <h3>CONSULTOR LEGAL IA</h3>
+                      <p>Dudas procesales, redenciones de pena y normatividad del Código Penal resueltas al instante.</p>
+                      <span class="status-online">ESTADO: OPERACIONAL</span>
+                    </div>
+                  </div>
+
+                  <div class="ai-brain-node gema-action" data-id="gem-j3" data-gema-type="law_citaciones">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon" style="filter: hue-rotate(90deg) drop-shadow(0 0 15px var(--accent-green));">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">GENERADOR CITACIONES</span>
+                    <div class="hologram-data">
+                      <h3>SECRETARIO IA</h3>
+                      <p>Automatiza la redacción de autos de citación y notificaciones de comparecencia según las reglas procesales.</p>
+                      <span class="status-offline">ESTADO: EN CONSTRUCCIÓN</span>
+                    </div>
+                  </div>
+
+                  <div class="ai-brain-node gema-action" data-id="gem-j4" data-gema-type="law_audiencias">
+                    <img src="/ai_brain_icon.png" alt="Brain Icon" class="brain-icon" style="filter: hue-rotate(90deg) drop-shadow(0 0 15px var(--accent-green));">
+                    <div class="neural-pulse"></div>
+                    <span class="brain-label">RESUMIDOR AUDIENCIAS</span>
+                    <div class="hologram-data">
+                      <h3>SINTETIZADOR JUDICIAL</h3>
+                      <p>Cruza argumentos de Fiscal vs Defensa extraídos de actas en bruto para preparar el Auto Interlocutorio del Juez.</p>
+                      <span class="status-offline">ESTADO: EN CONSTRUCCIÓN</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- VIEW 3: IT SUPPORT DASHBOARD -->
+              <div id="view-it" class="content-view hidden">
+                <div class="it-dashboard">
+                  <div class="it-header">
+                    <div class="it-header-left">
+                      <span class="it-icon">🖧</span>
+                      <div>
+                        <h2 class="it-title">TABLERO DE CONTROL IT</h2>
+                        <p class="it-subtitle">Centro de Diagnóstico y Reparación Automatizada de Infraestructura</p>
+                      </div>
+                    </div>
+                    <div class="it-status-bar">
+                      <span class="it-status-dot"></span>
+                      <span id="it-global-status">SISTEMA LISTO</span>
+                    </div>
+                  </div>
+
+                  <div class="it-grid">
+                    <!-- Tool 1 -->
+                    <div class="it-tool-card" data-action="clean">
+                      <div class="it-tool-icon">🗑️</div>
+                      <h3>Limpieza Profunda</h3>
+                      <p>Borra temporales, caché del sistema, prefetch y vacía la Papelera para recuperar velocidad.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-clean"></div></div>
+                      <button class="it-btn" id="btn-clean" onclick="runITAction('clean')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 2 -->
+                    <div class="it-tool-card" data-action="printer">
+                      <div class="it-tool-icon">🖨️</div>
+                      <h3>Reparar Impresora</h3>
+                      <p>Reinicia el servicio Spooler y destruye documentos fantasmas atascados en la cola.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-printer"></div></div>
+                      <button class="it-btn" id="btn-printer" onclick="runITAction('printer')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 3 -->
+                    <div class="it-tool-card" data-action="scanner">
+                      <div class="it-tool-icon">📠</div>
+                      <h3>Reparar Escáner</h3>
+                      <p>Reinicia los servicios WIA y RPC para destrabar protocolos de digitalización.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-scanner"></div></div>
+                      <button class="it-btn" id="btn-scanner" onclick="runITAction('scanner')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 4 -->
+                    <div class="it-tool-card" data-action="network">
+                      <div class="it-tool-icon">🌐</div>
+                      <h3>Arreglar Red / Internet</h3>
+                      <p>Renueva la IP, purga la caché DNS y resetea el stack Winsock para eliminar el "Sin Internet".</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-network"></div></div>
+                      <button class="it-btn" id="btn-network" onclick="runITAction('network')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 5 -->
+                    <div class="it-tool-card" data-action="update">
+                      <div class="it-tool-icon">🔄</div>
+                      <h3>Reparar Windows Update</h3>
+                      <p>Borra la bóveda de actualizaciones corruptas y reinicia los servicios WUAU y BITS.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-update"></div></div>
+                      <button class="it-btn" id="btn-update" onclick="runITAction('update')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 6 -->
+                    <div class="it-tool-card" data-action="explorer">
+                      <div class="it-tool-icon">🖥️</div>
+                      <h3>Resucitar Pantalla</h3>
+                      <p>Mata y reinicia el proceso Explorer.exe para recuperar una barra de tareas congelada.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-explorer"></div></div>
+                      <button class="it-btn" id="btn-explorer" onclick="runITAction('explorer')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 7 -->
+                    <div class="it-tool-card" data-action="disco">
+                      <div class="it-tool-icon">💽</div>
+                      <h3>Reparar Disco Duro</h3>
+                      <p>Ejecuta CHKDSK para detectar y reparar sectores dañados y errores lógicos en la unidad C.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-disco"></div></div>
+                      <button class="it-btn" id="btn-disco" onclick="runITAction('disco')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 8 -->
+                    <div class="it-tool-card" data-action="ram">
+                      <div class="it-tool-icon">🧠</div>
+                      <h3>Liberar Memoria RAM</h3>
+                      <p>Cierra procesos pesados en segundo plano (Teams, OneDrive, Widgets) para liberar memoria inmediatamente.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-ram"></div></div>
+                      <button class="it-btn" id="btn-ram" onclick="runITAction('ram')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 9 -->
+                    <div class="it-tool-card" data-action="firewall">
+                      <div class="it-tool-icon">🛡️</div>
+                      <h3>Reparar Firewall</h3>
+                      <p>Restaura las reglas del Firewall de Windows a valores predeterminados y reactiva la protección.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-firewall"></div></div>
+                      <button class="it-btn" id="btn-firewall" onclick="runITAction('firewall')">EJECUTAR</button>
+                    </div>
+<!-- Tool 10 -->
+                    <div class="it-tool-card" data-action="wifi">
+                      <div class="it-tool-icon">📶</div>
+                      <h3>Diagnóstico WiFi</h3>
+                      <p>Genera un reporte completo de la red inalámbrica, señal, canales congestionados y redes disponibles.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-wifi"></div></div>
+                      <button class="it-btn" id="btn-wifi" onclick="runITAction('wifi')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 11b: WiFi Boost -->
+                    <div class="it-tool-card" data-action="wifi_boost">
+                      <div class="it-tool-icon">🚀</div>
+                      <h3>Potenciar WiFi</h3>
+                      <p>Elimina límite QoS, configura DNS rápido (Google + Cloudflare) y optimiza TCP para máxima velocidad.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-wifi_boost"></div></div>
+                      <button class="it-btn" id="btn-wifi_boost" onclick="runITAction('wifi_boost')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 11 -->
+                    <div class="it-tool-card" data-action="usb">
+                      <div class="it-tool-icon">🔌</div>
+                      <h3>Reparar USB / Dispositivos</h3>
+                      <p>Reinicia controladores USB y fuerza la reenumeración de dispositivos no reconocidos.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-usb"></div></div>
+                      <button class="it-btn" id="btn-usb" onclick="runITAction('usb')">EJECUTAR</button>
+                    </div>
+                    <!-- Tool 12 -->
+                    <div class="it-tool-card" data-action="audio">
+                      <div class="it-tool-icon">🔊</div>
+                      <h3>Reparar Audio / Sonido</h3>
+                      <p>Reinicia los servicios de audio de Windows cuando las bocinas o audífonos dejan de sonar.</p>
+                      <div class="it-progress-bar"><div class="it-progress-fill" id="prog-audio"></div></div>
+                      <button class="it-btn" id="btn-audio" onclick="runITAction('audio')">EJECUTAR</button>
+                    </div>
+                  </div>
+
+                  <!-- God Mode Button -->
+                  <div class="it-god-mode">
+                    <button class="it-god-btn" onclick="runITAction('god')">
+                      ⚡ MODO DIOS: REPARACIÓN TOTAL INSTITUCIONAL ⚡
+                    </button>
+                  </div>
+
+                  <!-- Live Console -->
+                  <div class="it-console" id="it-console">
+                    <div class="it-console-header">
+                      <span class="console-dot red"></span>
+                      <span class="console-dot yellow"></span>
+                      <span class="console-dot green"></span>
+                      <span class="console-title">CONSOLA DEL SISTEMA // ANDRES PINTO REP-IT v2.0</span>
+                    </div>
+                    <div class="it-console-body" id="console-output">
+                      <p class="console-line init">&gt; Sistema en reposo. Seleccione una operación de mantenimiento...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- VIEW 2: PROFILE (SOPORTES / DOCS) - DEFAULT ACTIVE -->
+              <div id="view-profile" class="content-view active">
+                <div class="support-row grid-layout">
+                  <div class="ai-brain-node small" data-pdf="Policía Nacional de Colombia.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">ANTEC. POLICÍA</span>
+                  </div>
+                  <div class="ai-brain-node small" data-pdf="PROCURADURIA.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">ANTEC. PROCURADOR</span>
+                  </div>
+                  <div class="ai-brain-node small" data-pdf="ANTECEDENTES CONTRALORIA.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">ANTEC. CONTRALOR</span>
+                  </div>
+                  <div class="ai-brain-node small" data-pdf="Consulta RNMC.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">CONSULTA RNMC</span>
+                  </div>
+                  <div class="ai-brain-node small" data-pdf="CertificacionAlimentos.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">CERT. ALIMENTOS</span>
+                  </div>
+                  <div class="ai-brain-node small" data-pdf="DECLARACIÓN JURAMENTADA SOBRE AUSENCIA DE INHABILIDADES.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">INHABILIDADES</span>
+                  </div>
+                  <div class="ai-brain-node small" data-pdf="HojaVidaIngenieroSistemasOK.pdf">
+                    <img src="/ai_brain_icon.png" alt="Doc Icon" class="brain-icon">
+                    <span class="brain-label">HOJA DE VIDA</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <!-- Holographic PDF Viewer Modal -->
+      <div id="pdf-modal" class="pdf-modal-container hidden">
+        <div class="pdf-modal-content">
+          <div class="modal-header">
+            <span id="modal-title">DOCUMENTO ANALIZADO</span>
+            <button id="close-modal" class="close-btn">X</button>
+          </div>
+          <div class="pdf-frame-wrapper">
+            <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Holographic Prompt Generator Modal -->
+      <div id="gema-modal" class="pdf-modal-container hidden">
+        <div class="pdf-modal-content form-modal">
+          <div class="modal-header">
+            <span id="gema-modal-title">GENERADOR DE PROMPT: CTI</span>
+            <button id="close-gema-modal" class="close-btn">X</button>
+          </div>
+          <div class="gema-intro-wrapper">
+            <div class="gema-alert">
+              <span class="icon">🛡️</span>
+              <p id="gema-modal-desc">Al abrir este módulo, serás redirigido a un entorno seguro interactivo impulsado por IA y parametrizado por Andrés Pinto.</p>
+            </div>
+            
+            <div class="gema-instructions" id="gema-modal-steps">
+              <h4>¿Qué debes hacer en la Gema?</h4>
+              <p>1. Simplemente pega en la caja de chat el borrador de tu investigación, un testimonio en bruto o una lista de pruebas sueltas.</p>
+              <p>2. La Inteligencia Artificial estructurará automáticamente la narrativa cronológica y te indicará los códigos FPJ (Formatos de Policía Judicial) adecuados para tu informe pericial.</p>
+            </div>
+            
+            <button id="btn-open-gem" class="action-btn neon-pulse" data-url="">INICIAR ASISTENTE EN GEMINI</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">Prompt copiado al portapapeles</div>
+
+    <!-- Custom 3D Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
+
+    <!-- IT Holographic Confirm Modal -->
+    <div id="it-confirm-overlay" class="it-confirm-overlay hidden">
+      <canvas id="holo-particles"></canvas>
+      <div class="it-confirm-modal">
+        <div class="it-confirm-glow"></div>
+        <div class="it-confirm-header">
+          <span class="it-confirm-icon" id="it-confirm-icon">⚙️</span>
+          <h2 class="it-confirm-title" id="it-confirm-title">CONFIRMAR OPERACIÓN</h2>
+        </div>
+        <div class="it-confirm-body">
+          <div class="it-confirm-badge" id="it-confirm-badge">REPARACIÓN DETECTADA</div>
+          <p class="it-confirm-label" id="it-confirm-label">Módulo</p>
+          <div class="it-confirm-description" id="it-confirm-desc">Descripción del proceso...</div>
+          <div class="it-confirm-notice">
+            <span class="it-notice-icon">⬇️</span>
+            <span>Se descargará un script <code>.bat</code>. Ábrelo como <strong>Administrador</strong> para aplicar el arreglo real en tu PC.</span>
+          </div>
+        </div>
+        <div class="it-confirm-actions">
+          <button class="it-confirm-cancel" id="it-confirm-cancel">✕ CANCELAR</button>
+          <button class="it-confirm-ok" id="it-confirm-ok">⚡ EJECUTAR REPARACIÓN</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
