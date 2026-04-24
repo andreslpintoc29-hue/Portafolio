@@ -216,7 +216,7 @@ function initPdfViewer() {
       if (!pdfPath) return;
 
       modalTitle.innerText = `ANALIZANDO: ${label}`;
-      iframe.src = `/${pdfPath}`;
+      iframe.src = `${import.meta.env.BASE_URL}${pdfPath}`;
       
       modal.classList.remove('hidden');
       gsap.fromTo('.pdf-modal-content', 
@@ -350,7 +350,7 @@ function initGemaModal() {
       title: "SCRIPT MANTENIMIENTO INTEGRAL",
       desc: "Herramienta de diagnóstico y reparación profunda (Limpieza de Temporales, Cache DNS, Reinicio Cola de Impresión y WIA - Escaner).",
       steps: `<h4>Instrucciones para Desbloquear Tu PC</h4><p>1. Da clic en "Descargar Script" abajo.</p><p>2. En tu PC, hazle doble clic a <code>Soporte_IT_Andres_Pinto.bat</code> para que barra y solucione el entorno sin afectar tus documentos.</p>`,
-      url: "/Soporte_IT_Andres_Pinto.bat",
+      url: import.meta.env.BASE_URL + "Soporte_IT_Andres_Pinto.bat",
       btnText: "⬇️ DESCARGAR SCRIPT (.bat)"
     }
   };
@@ -665,21 +665,22 @@ wifi: {
     if (statusEl) statusEl.textContent = 'EJECUTANDO: ' + config.label;
 
     // --- Auto-Download the real .bat for each action ---
-const scriptMap = {
-      clean:    '/it_limpieza.bat',
-      printer:  '/it_impresora.bat',
-      scanner:  '/it_escaner.bat',
-      network:  '/it_red.bat',
-      update:   '/it_update.bat',
-      explorer: '/it_explorer.bat',
-      disco:    '/it_disco.bat',
-      ram:      '/it_ram.bat',
-      firewall: '/it_firewall.bat',
-      wifi:     '/it_wifi.bat',
-      usb:      '/it_usb.bat',
-      audio:    '/it_audio.bat',
-      wifi_boost: '/it_wifi_boost.bat',
-      god:      '/Soporte_IT_Andres_Pinto.bat'
+    const base = import.meta.env.BASE_URL;
+    const scriptMap = {
+      clean:    base + 'it_limpieza.bat',
+      printer:  base + 'it_impresora.bat',
+      scanner:  base + 'it_escaner.bat',
+      network:  base + 'it_red.bat',
+      update:   base + 'it_update.bat',
+      explorer: base + 'it_explorer.bat',
+      disco:    base + 'it_disco.bat',
+      ram:      base + 'it_ram.bat',
+      firewall: base + 'it_firewall.bat',
+      wifi:     base + 'it_wifi.bat',
+      usb:      base + 'it_usb.bat',
+      audio:    base + 'it_audio.bat',
+      wifi_boost: base + 'it_wifi_boost.bat',
+      god:      base + 'Soporte_IT_Andres_Pinto.bat'
     };
     if (scriptMap[action]) {
       setTimeout(function() {
