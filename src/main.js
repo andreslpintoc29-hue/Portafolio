@@ -52,7 +52,7 @@ function initHoloBrain() {
     }
   }
 
-  for (let i = 0; i < 200; i++) particles.push(new HoloParticle());
+  for (let i = 0; i < 50; i++) particles.push(new HoloParticle());
 
   function drawBrainCore() {
     const cx = canvas.width / 2;
@@ -68,6 +68,10 @@ function initHoloBrain() {
   }
 
   function animate() {
+    requestAnimationFrame(animate);
+    const overlay = document.getElementById('it-confirm-overlay');
+    if (overlay && overlay.classList.contains('hidden')) return;
+
     ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     brainPhase += 0.03;
@@ -94,7 +98,6 @@ function initHoloBrain() {
       }
     }
     ctx.globalAlpha = 1;
-    requestAnimationFrame(animate);
   }
   animate();
 }
@@ -178,25 +181,17 @@ function initNavigation() {
     // Set active
     activeNav.classList.add('active');
 
-    // Fade out current views
+    // Hide all views instantly
     [viewFiscalia, viewJudicial, viewProfile, viewIt].forEach(view => {
       if (view && !view.classList.contains('hidden')) {
-        gsap.to(view, { opacity: 0, y: 30, duration: 0.3, onComplete: () => {
-          view.classList.add('hidden');
-          view.classList.remove('active');
-        }});
+        view.classList.add('hidden');
+        view.classList.remove('active');
       }
     });
 
-    // Fade in new view
-    setTimeout(() => {
-      activeView.classList.remove('hidden');
-      activeView.classList.add('active');
-      gsap.fromTo(activeView, 
-        { opacity: 0, y: 30 }, 
-        { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }
-      );
-    }, 300);
+    // Show new view instantly
+    activeView.classList.remove('hidden');
+    activeView.classList.add('active');
   }
 
   if(navFiscalia) navFiscalia.addEventListener('click', (e) => { e.preventDefault(); switchView(navFiscalia, viewFiscalia); });
@@ -279,15 +274,8 @@ function initBrainNodeInteractions() {
 // --- 5. System Bootstrap ---
 function animateSystemBootstrap() {
   const tl = gsap.timeline();
-  tl.from('.ai-core-env', { opacity: 0, duration: 1.5 })
-    .from('.top-nav-bar', { y: -100, opacity: 0, duration: 0.8, ease: 'back.out(1.5)' }, '-=0.5')
-    .from('.content-view.active .ai-brain-node', { 
-      scale: 0, 
-      opacity: 0, 
-      stagger: 0.1, 
-      duration: 1, 
-      ease: 'back.out(1.7)' 
-    }, '-=0.3');
+  tl.from('.ai-core-env', { opacity: 0, duration: 0.3 })
+    .from('.top-nav-bar', { y: -50, opacity: 0, duration: 0.3 }, '-=0.1');
 }
 
 // --- 6. GEMA Prompter Modal Logic ---
