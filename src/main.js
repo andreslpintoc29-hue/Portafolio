@@ -10,7 +10,36 @@ document.addEventListener('DOMContentLoaded', () => {
   animateSystemBootstrap();
   initITDashboard();
   initHoloBrain();
+  initTybaModuleNavigation();
 });
+
+function initTybaModuleNavigation() {
+  const menuItems = document.querySelectorAll('.tyba-menu-item');
+  const sections = document.querySelectorAll('.tyba-section');
+
+  menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+      // Remove active from all items
+      menuItems.forEach(i => i.classList.remove('active'));
+      // Add active to clicked item
+      item.classList.add('active');
+
+      // Hide all sections
+      sections.forEach(sec => {
+        sec.classList.remove('active');
+        sec.classList.add('hidden');
+      });
+
+      // Show target section
+      const targetId = item.getAttribute('data-target');
+      const targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.classList.remove('hidden');
+        targetSection.classList.add('active');
+      }
+    });
+  });
+}
 
 function initHoloBrain() {
   const canvas = document.getElementById('holo-particles');
@@ -164,25 +193,27 @@ function initNavigation() {
   const navJudicial = document.getElementById('nav-judicial');
   const navProfile = document.getElementById('nav-profile');
   const navIt = document.getElementById('nav-it');
+  const navTyba = document.getElementById('nav-tyba');
   
   const viewFiscalia = document.getElementById('view-fiscalia');
   const viewJudicial = document.getElementById('view-judicial');
   const viewProfile = document.getElementById('view-profile');
   const viewIt = document.getElementById('view-it');
+  const viewTyba = document.getElementById('view-tyba');
 
   // Helper to switch views with an animation
   function switchView(activeNav, activeView) {
     if (!activeNav || !activeView) return;
     
     // Reset all navs
-    [navFiscalia, navJudicial, navProfile, navIt].forEach(nav => {
+    [navFiscalia, navJudicial, navProfile, navIt, navTyba].forEach(nav => {
       if(nav) nav.classList.remove('active')
     });
     // Set active
     activeNav.classList.add('active');
 
     // Hide all views instantly
-    [viewFiscalia, viewJudicial, viewProfile, viewIt].forEach(view => {
+    [viewFiscalia, viewJudicial, viewProfile, viewIt, viewTyba].forEach(view => {
       if (view && !view.classList.contains('hidden')) {
         view.classList.add('hidden');
         view.classList.remove('active');
@@ -198,6 +229,7 @@ function initNavigation() {
   if(navJudicial) navJudicial.addEventListener('click', (e) => { e.preventDefault(); switchView(navJudicial, viewJudicial); });
   if(navProfile) navProfile.addEventListener('click', (e) => { e.preventDefault(); switchView(navProfile, viewProfile); });
   if(navIt) navIt.addEventListener('click', (e) => { e.preventDefault(); switchView(navIt, viewIt); });
+  if(navTyba) navTyba.addEventListener('click', (e) => { e.preventDefault(); switchView(navTyba, viewTyba); });
 }
 
 // --- 3. PDF Viewer Logic ---

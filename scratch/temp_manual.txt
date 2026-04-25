@@ -1,0 +1,694 @@
+             CONSEJO SUPERIOR DE LA JUDICATURA   
+                   
+DIRECCIÓN EJECUTIVA DE ADMINISTRACIÓN JUDICIAL 
+JUSTICIA XXI WEB - TYBA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Manual de 
+Procedimientos 
+      
+ 
+Sistema de Gestión de Procesos 
+Judiciales 
+ 
+ 
+JUSTICIA XXI WEB 
+ 
+ 
+      
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+ 
+Bienvenidos 
+Justicia XXI Web (TYBA) 
+ 
+ 
+Contenido 
+Presentación ........................................................................................................... 6 
+Glosario ................................................................................................................. 7 
+Documentos Electrónicos Judiciales ................................................................... 7 
+Actuaciones Judiciales ........................................................................................ 7 
+Memoriales ......................................................................................................... 7 
+Notificaciones Electrónicas Judiciales ................................................................. 7 
+Firma del expediente ........................................................................................... 8 
+Fecha de recepción para conteo de términos ........................................................ 8 
+Correos Electrónicos Autorizados ....................................................................... 9 
+Ingreso al Aplicativo Justicia XXI Web (Tyba) .................................................... 10 
+Gestión de Contraseñas ..................................................................................... 11 
+Ingreso Interfaz de Usuario al Aplicativo Justicia XXI Web (Tyba) ..................... 14 
+Notificación de Actuaciones ................................................................................. 15 
+Creación de Procesos ........................................................................................... 17 
+Registro de procesos para Reparto .................................................................... 17 
+Asociar los Sujetos Procesales .......................................................................... 20 
+Adjuntar Archivos ............................................................................................. 24 
+Registro de Tutela Digital .................................................................................... 27 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Consulta de Procesos ............................................................................................ 31 
+Modificación de Procesos .................................................................................... 33 
+Ocultar Sujetos de un Proceso ........................................................................... 34 
+Anular sujetos procesales .................................................................................. 35 
+Registro de Actuaciones ....................................................................................... 36 
+Crear una Actuación .......................................................................................... 39 
+Adjuntar Archivos ............................................................................................. 41 
+Casos de uso Registro de Actuaciones .................................................................. 42 
+Anulación de Repartos ...................................................................................... 42 
+Adjudicación por conocimiento previo Tribunal ............................................... 43 
+Asignación por reparto a otro despacho de la misma Especialidad .................... 44 
+Asignación o traslado de proceso a un despacho específico de la misma 
+especialidad ....................................................................................................... 44 
+Envío de procesos al Superior – Segunda Instancia ........................................... 45 
+Anulación de Actuaciones ................................................................................. 46 
+Actuaciones que Modifican el Reparto .............................................................. 46 
+Actuaciones que generan Estado ....................................................................... 48 
+Notificación de Actuaciones.............................................................................. 49 
+Consulta de la Notificación enviada .................................................................. 52 
+Datos de la Notificación Electrónica ................................................................. 54 
+Actuaciones de Secretaría .................................................................................... 55 
+Anulación de Reparto por Permiso del Juez ...................................................... 55 
+Anulación porque no es un proceso ................................................................... 56 
+Asignación por reparto a otro despacho de la misma Especialidad .................... 57 
+Asignación o traslado de proceso a un despacho específico de la misma 
+especialidad ....................................................................................................... 57 
+Cambio de Clase de un proceso ......................................................................... 58 
+Cambio de Competencia ................................................................................... 59 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Declaración de Impedimento ............................................................................. 60 
+Actuaciones que dan Salida al proceso .............................................................. 61 
+Envío al Superior por Interpuestos sin Finalización........................................... 61 
+Envío a Reparto por Interpuestos (Superior sin JXXI Web) .............................. 62 
+Envío al Superior por Interpuestos con Efecto Suspensivo ................................ 63 
+Envío al Superior por Interpuestos con Conocimiento Previo............................ 63 
+Por no aceptación de impedimento .................................................................... 64 
+Salida Finalizando Instancia .............................................................................. 65 
+Acumulación de Procesos ................................................................................. 65 
+Actuaciones de ámbito General ......................................................................... 66 
+Actuación para firma de documento .................................................................. 67 
+Firma de un documento ..................................................................................... 68 
+Recuperación Segunda Clave para la Firma ...................................................... 71 
+Fijación Estados ................................................................................................ 73 
+Registro de Actuaciones para Tutelas ................................................................... 77 
+Admisión de la Tutela ....................................................................................... 77 
+Notificación Auto Admisorio ............................................................................ 78 
+Contestación ..................................................................................................... 79 
+Sentencia ........................................................................................................... 79 
+Notificación de la Sentencia .............................................................................. 80 
+Impugnación de la Tutela .................................................................................. 81 
+Respuesta a la Impugnación .............................................................................. 81 
+Remisión al Superior ......................................................................................... 82 
+Actuaciones de Segunda Instancia ..................................................................... 83 
+Sentencia de Segunda Instancia ......................................................................... 84 
+Notificación de la Sentencia en Segunda Instancia ............................................ 85 
+Remisión a la Corte Constitucional ................................................................... 86 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Remite a Corte para Subsanar ........................................................................... 88 
+Remisión para Completar Expediente ............................................................... 89 
+Actuaciones que registra la Corte Constitucional .............................................. 90 
+Devolución para Subsanar ................................................................................. 90 
+Exclusión de Selección...................................................................................... 92 
+Remite para Custodia del Proceso ..................................................................... 92 
+Envío a Penal de Conocimiento......................................................................... 94 
+Procedimiento para reingreso de procesos anulados y archivados ..................... 98 
+Procedimiento para el Registro y Gestión de Audiencias.................................... 101 
+Creación de Procesos para Reparto ................................................................. 101 
+Registro y Gestión de Audiencias.................................................................... 104 
+Inicio de Audiencias ........................................................................................ 106 
+Suspensión de Audiencias ............................................................................... 108 
+Reanudación de Audiencias ............................................................................ 109 
+Finalización de Audiencias ............................................................................. 110 
+Procedimiento para el Reparto de Procesos Penales Fuera de Horario ................ 112 
+Creación de Turnos en Horario Adicional ....................................................... 112 
+Consulta y Anulación de Turnos ..................................................................... 114 
+Creación de Procesos para Reparto ................................................................. 116 
+Procedimiento para el Reparto de Habeas Corpus fuera de Horario Laboral....... 121 
+Creación Turnos en Horario Adicional ............................................................ 121 
+Consulta y Anulación de Turnos ..................................................................... 124 
+Creación de Procesos para Reparto ................................................................. 125 
+Registro de Usuarios .......................................................................................... 129 
+Pasos para el ingreso de nuevos usuarios......................................................... 130 
+Creación / Transformación de Despacho Judicial ............................................... 132 
+Intercambio de Juez en un Despacho Judicial .................................................. 135 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Traslado Masivo de Procesos .......................................................................... 137 
+Procedimiento para el Registro Nacional de Personas Emplazadas .................... 139 
+Identificación de los sujetos a emplazar .......................................................... 139 
+Registro de Actuaciones .................................................................................. 140 
+Consultas Públicas ............................................................................................. 142 
+Consulta Pública de Procesos Judiciales .......................................................... 142 
+Consulta de Fijaciones de Estado .................................................................... 143 
+Validación de Documentos/Archivos .............................................................. 144 
+Descarga Archivos de Notificaciones .............................................................. 145 
+Consulta Pública de Emplazamiento ............................................................... 146 
+ 
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Presentación 
+El sistema de gestión judicial “Justicia XXI Web (Tyba)”, inició su transformación 
+de conformidad con lo aprobado por la Sala Administrativa mediante acuerdo 
+PSAA14-10215 de septiembre 3 de 2014, con el fin de brindar mayor acceso al 
+sistema de justicia y ofrecer una herramienta de gestión de procesos y documentos 
+en ambiente web que llegara a todos los despachos y juzgados judiciales del país de 
+manera gradual como:                                    
+                                                 
+ 
+                                                
+El sistema Justicia XXI Web (Tyba), cuenta con el uso de buenas prácticas 
+internacionales para el trámite electrónico, la retroalimentación de los despachos y 
+juzgados judiciales de Restitución de Tierras, las experiencias recolectadas por la 
+mesa de Informática (tecnología) de la Cumbre Judicial Iberoamericana y el Modelo 
+de cero papeles en el trámite judicial.  
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Glosario 
+ 
+Documentos Electrónicos Judiciales 
+ 
+Los documentos electrónicos también conocido como "e-document" o "e-doc"; es 
+todo contenido originalmente creado desde una aplicación electrónica y que contiene 
+información para facilitar entre las partes. 
+ 
+Actuaciones Judiciales 
+ 
+Conforman el índice del expediente judicial y abarca todos los trámites que realiza 
+un despacho judicial y los actores intervinientes.  
+ 
+Las actuaciones judiciales deben guardar un orden cronológico, tener un estampado 
+de tiempo y adicionalmente pueden contener como anexos documentos electrónicos 
+u objetos digitales.  
+ 
+Memoriales 
+ 
+Se denominará memorial a todo documento presentado por los sujetos procesales y 
+demás intervinientes posterior a la presentación de la demanda, esto incluye: 
+presentación de documentación que complementen la demanda, la solicitud de 
+medidas, la interposición de recursos, presentación de una oposición, la designación 
+de un representante judicial a terceros indeterminados y además toda la 
+documentación que pueda surgir hacia los despachos judiciales en virtud de un 
+proceso judicial en curso y que serán incorporados al expediente a través de una 
+actuación.  
+ 
+Notificaciones Electrónicas Judiciales  
+ 
+Son aquellas comunicaciones que emiten los despachos judiciales y que son 
+trasladadas desde el punto de emisión hasta el destinatario a través de medios 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+electrónicos, es decir, sin desplazamiento del soporte físico del documento objeto de 
+la notificación. 
+  
+Se puede entender por medios electrónicos: el Correo electrónico, Fax, página WEB, 
+MMS, redes sociales, Chats (WhatsApp) entre otros, siempre y cuando contenga los 
+requerimientos mínimos legales y se pueda dejar constancia de su envío en el 
+expediente electrónico.  
+ 
+Firma del expediente 
+ 
+Conjunto de datos de identificación que sirve para la validación del contenido y la 
+estructura de un expediente, a los efectos de garantizar su autenticidad e integridad, 
+pudiendo abarcar, además de la información propia del índice, otra de carácter 
+procedimental particular de cada organización.  
+ 
+La firma del expediente es por tanto una firma electrónica por parte de la 
+organización responsable del expediente.  
+La firma del expediente se aplica a su índice electrónico, avalando la integridad de 
+dicho índice y, por extensión, del contenido del expediente electrónico.  
+ 
+El uso de la firma electrónica es responsabilidad de cada usuario y deberá ser 
+entregada al momento de ingreso y retiro del servidor judicial, dado que es un activo 
+de información personal e intransferible. 
+ 
+Fecha de recepción para conteo de términos 
+ 
+Teniendo en cuenta que a través de los mecanismos electrónicos es viable la 
+recepción de la demanda y los memoriales las 24 horas del día, es necesario aclarar 
+que los términos se entenderán presentados únicamente dentro del horario hábil del 
+despacho judicial que conoce el caso. Si se recepcionan memoriales o reciben 
+actuaciones emitidas por los despachos judiciales, fuera de estos horarios, se 
+entenderán como recibidos al día siguiente hábil.  
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+La excepción a esta regla son los Habeas Corpus, pues éstas tienen un tiempo 
+máximo establecido para su atención de 36 horas; por lo tanto, deben ser atendidas 
+de forma inmediata. 
+ 
+Correos Electrónicos Autorizados 
+ 
+La transmisión de comunicaciones electrónicas se realizará a través de los correos 
+electrónicos institucionales definidos previamente.  
+ 
+Los despachos judiciales poseen un correo institucional a través del cual se reciben 
+y envían las notificaciones. 
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Ingreso al Aplicativo Justicia XXI Web (Tyba) 
+ 
+1. Para poder Ingresar al Aplicativo Justicia XXI Web (Tyba), utilizar estos 
+Navegadores Recomendados como: 
+ 
+ 
+                                             
+ 
+2. Copia la siguiente URL o Link según el navegador que uses: 
+      
+https://procesojudicial.ramajudicial.gov.co/Justicia21/Administracion/Inicio
+Aplicaciones/InicioJusticia21Web.aspx  
+ 
+3. Aparece la siguiente pantalla:  
+ 
+ 
+        
+ 
+ 
+Opción a partir de la cual se ingresa al 
+aplicativo 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+ 
+Opción que permite descargar archivos 
+adjuntos de un proceso a partir de un código 
+de certificado 
+ 
+Opción para consultar archivos adjuntos a un 
+proceso a partir de su código de verificación 
+ 
+Opción a través de la cual se ingresa a la 
+consulta de Fijaciones de Estado 
+ 
+Opción a través de la cual se ingresa a la 
+consulta pública de procesos en Tyba 
+ 
+Opción desde la cual se podrá descargar los 
+archivos de notificación de un proceso 
+ 
+Permite 
+validar 
+archivos 
+firmados 
+electrónicamente desde Justicia XXI Web 
+ 
+4. Allí los Servidores Judiciales deben ingresar al icono de Justicia XXI Web 
+ 
+ 
+  
+5. Cuando Ingresamos a Justicia XXI Web, nos envía a la Interfaz: 
+ 
+ 
+Allí digitamos el usuario y contraseña que le fue asignado, recuerde que en caso de 
+olvido de contraseña, los funcionarios pueden ingresar por la opción Recordar 
+Contraseña / Desbloquear Usuario desde la pantalla de ingreso al sistema.  
+ 
+Gestión de Contraseñas 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+El sistema cuenta con opciones de seguridad que le permiten al usuario, tener total 
+tranquilidad en el registro de la información y de esa manera poder realizar el cambio 
+de la contraseña la primera vez que ingresa a la aplicación o en el momento que lo 
+requiera, haciendo clic en el icono Cambio de Contraseña 
+. 
+ 
+Las políticas estipuladas en el sistema para el cambio de contraseña son: 
+ 
+• Longitud mínima (08) caracteres que incluyan caracteres especiales, combinación 
+de mayúsculas, minúsculas y números. 
+ 
+Cuando un usuario intente más de (3) veces el ingreso de forma incorrecta la cuenta 
+será bloqueada, motivo por el cual, el sistema informará al respecto y solicitará el 
+desbloqueo, debe dar clic en siguiente 
+. 
+Si ingresó por esta opción o hizo clic directamente en Desbloquear Usuario (de la 
+ventana de Inicio Sesión), nos abrirá un cuadro donde se debe digitar su Usuario 
+correspondiente, Ej: xPLAZAA y dar 
+.  El sistema enviará un código a su 
+correo institucional configurado actualmente en el usuario, por favor verificar la 
+carpeta Recibidos (Bandeja de Entrada) y la de Correo no Deseado.  
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+ 
+ 
+Debe tomar el código que le llegó por correo y digitarlo en el campo respectivo de 
+la ventana de desbloqueo. Al dar 
+, el sistema envía un correo con la nueva 
+contraseña, con la cual podrá ingresar y así mismo, el sistema solicitará el Cambio 
+Obligatorio de la clave genérica, que inicialmente le fue enviada vía correo 
+electrónico. 
+ 
+En caso de verificar que este correo no es correcto, por favor comunicarse con el 
+respectivo ingeniero seccional de su departamento, para solicitar la actualización 
+del correo en la aplicación y posteriormente podrá realizar el desbloqueo del usuario 
+o recordación de contraseña. 
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Ingreso Interfaz de Usuario al Aplicativo Justicia 
+XXI Web (Tyba) 
+ 
+Al terminar el procedimiento anterior, el sistema nos presenta una interfaz de usuario 
+que representa un conjunto de objetos, iconos y elementos o símbolos de las acciones 
+o tareas que el usuario puede realizar en el aplicativo Justicia XXI Web (Tyba).  A 
+continuación se explicara cada uno de sus funciones para mejor comprensión. 
+ 
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+ 
+ 
+Notificación de Actuaciones 
+ 
+La aplicación cuenta con un mecanismo de notificación de las actuaciones que han 
+sido registradas en los procesos, a su vez, esta notificación corresponde al 
+mecanismo de notificación de los procesos asignados por reparto. 
+ 
+Para ello, cada vez que un usuario ingresa a la aplicación lo primero que va a 
+visualizar es la información correspondiente a las Notificaciones, en donde el 
+usuario podrá ver la relación de procesos en los cuales se han registrado actuaciones, 
+presentadas en orden descendente por la fecha y hora de registro. 
+ 
+Las notificaciones que se muestran se encuentran visibles durante 24 horas contadas 
+a partir de la fecha y hora de registro de la actuación, sin tener en cuenta los fines de 
+semana, es decir, el tiempo de 24 horas es continuo. 
+ 
+Para poder entender bien la pantalla de Notificaciones, se tienen los siguientes datos: 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+1. Acción: que corresponde a los iconos que permiten hacer la Consulta 
+, 
+Modificación 
+, Visualización del Registro de Actuaciones 
+ y ampliar la 
+fila de la grilla para verificar las fechas de la actuación 
+. 
+ 
+2. Información del proceso como lo es Código Proceso, Nombre Despacho, 
+Instancia, Clase Proceso, Tipo Proceso, Tipo Actuación, Fecha Actuación y 
+Fecha Proceso, que corresponden a los datos de la actuación registrada en el 
+proceso. 
+ 
+3. Aviso de la cantidad de actuaciones registradas. Este aviso es solo informativo, 
+es decir, al dar clic sobre la campana, no se presentará ninguna novedad. 
+ 
+4. Aviso de la cantidad de procesos asignados por reparto, de acuerdo con la 
+actuación Radicación y Reparto. Este aviso es solo informativo, es decir, al dar 
+clic sobre la campana, no se presentará ninguna novedad. 
+ 
+5. Casilla para filtrar dentro de la grilla, cuyo fin es facilitar la búsqueda de procesos 
+ 
+ 
+ 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Creación de Procesos 
+ 
+El registro de procesos en la aplicación se puede realizar de acuerdo con los dos 
+mecanismos que corresponden a los momentos procedimentales, como lo son: 
+Asignación por reparto y registro de procesos históricos. 
+ 
+Asignación por Reparto 
+ 
+Es el primer momento dentro del registro de la información de los procesos, para 
+que sean sometidos a la asignación por reparto, en donde se debe dar cumplimiento 
+a los acuerdos de reparto dispuestos por el Consejo Superior de la Judicatura para 
+cada una de las especialidades como lo son: Civil Circuito, Civil Municipal, Civil 
+Municipal Pequeñas Causas, Penal Circuito con Función de Conocimiento, Familia, 
+Laboral y Administrativo, así mismo, se cumple con el mecanismo para que se 
+realice el reparto de procesos con respecto a la Tutela Digital. 
+ 
+La asignación por reparto se rige bajo las premisas de la Equidad y la Aleatoriedad, 
+garantizando de esta manera la transparencia en el procedimiento. 
+ 
+Registro de Procesos Históricos 
+ 
+El registro de procesos históricos tiene que ver con el registro de aquellos procesos 
+que fueron asignados a los despachos judiciales previo a la implementación del 
+reparto mediante la aplicación Justicia XXI Web, aplica también a aquellos 
+despachos judiciales que solo realizan el registro de procesos por medio de esta 
+modalidad (posterior al reparto realizado a través de otro mecanismo) y también se 
+utiliza para el registro de procesos que corresponden a los Registros Nacionales de 
+Emplazados del cual se estará hablando más adelante. 
+ 
+Registro de procesos para Reparto 
+ 
+El registro para reparto de los procesos se encuentra habilitado para los usuarios 
+cuyos roles corresponden a Oficina Judicial, Jefe de Oficina Judicial, Líder del 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Centro de Servicios Judiciales y Centro de Servicios Judiciales, quienes serán los 
+primeros en registrar la información de un proceso para ser sometido a la asignación 
+por reparto y de esa manera el sistema inicie con el proceso digital. 
+ 
+Para poder dar inicio al registro de los procesos, el usuario debe ingresar al menú 
+Administración y seleccionar la opción Procesos, con lo cual lo llevará a la pantalla 
+de procesos. 
+ 
+ 
+ 
+ 
+ 
+ 
+Estando en la pantalla de Procesos, el usuario debe hacer clic en Agregar 
+. 
+ 
+Allí se mostrarán los campos que deben diligenciarse para brindarle la información 
+al sistema y que este realice la asignación por reparto: 
+ 
+  
+MANUAL DE 
+PROCEDIMIENTOS 
+Página: 0/0 
+SISTEMA DE GESTIÓN DE 
+PROCESOS JUDICIALES 
+ 
+ JUSTICIA XXI WEB - TYBA 
+Fecha: 
+17/08/2023 
+ 
+Corporación: Se selecciona la corporación a donde será dirigido el reparto 
+Especialidad: Se selecciona el grupo en el cual se encuentran los jueces de acuerdo 
+con la especialidad. Ejemplo Civiles o Penales 
+Tipo Ley: Se refiere al Tipo de ley por la cual se va a registrar el proceso; solo aplica 
+para los despachos Penales o Promiscuos Municipales. 
+Tipo de Proceso: De acuerdo con lo que se va a realizar, se debe seleccionar el tipo 
+de proceso que agrupa las clases de proceso por las cuales se realizará la asignación 
+por Reparto 
+ 
+Especialidad 
+Tipo de Proceso 
+Juzgados Civiles de Pequeñas Causas 
+CGP Civil Municipal Pequeñas Causas 
+Juzgados Civiles Municipales 
+CGP Civil Municipal 
+Juzgados Civiles del Circuito 
+CGP Civil Circuito 
+Juzgados Familia 
+CGP Familia 
+Juzgados Laborales 
+El que contenga el texto final Laboral 
+Juzgados Administrativos 
+ 
+El que contenga el texto final Contencioso 
+Administrativo 
+Acciones Constitucionales 
+Constitucional 
+ 
+Clase Proceso: Se selecciona la clase de proceso por la cual se debe realizar la 
+asignación por reparto, en donde estas clases son los mismos Grupos de Reparto que 
+se encuentran enunciados en los acuerdos de reparto de cada especialidad. 
+Subclase Proceso: Se selecciona la subclase de proceso si aplica, si no aplica se 
+debe seleccionar la que allí se encuentra definida. 
+Para el caso de los procesos Ejecutivos, el sistema muestra el campo correspondiente 
+a Número Pagaré y Valor Pagaré en Pesos, con lo cual se está diferenciando de 
+cualquier otro proceso ejecutivo que se requiera registrar. 
+Otros campos: De igual manera se encuentran disponibles otros campos que si se 
+requieren o es menester por parte de quienes ingresan inicialmente la información 
+para el reparto, sea registrada. Esta información corresponde a Cuantía del Proceso, 
+Monto Compensación, Valor Pretensiones y Observaciones. 
+ 

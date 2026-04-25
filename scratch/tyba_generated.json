@@ -1,0 +1,2203 @@
+{
+  "documentos_electronicos_judiciales": {
+    "title": "DOCUMENTOS ELECTRÓNICOS JUDICIALES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_judiciales": {
+    "title": "ACTUACIONES JUDICIALES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "memoriales": {
+    "title": "MEMORIALES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "notificaciones_electronicas_judiciales": {
+    "title": "NOTIFICACIONES ELECTRÓNICAS JUDICIALES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "firma_del_expediente": {
+    "title": "FIRMA DEL EXPEDIENTE",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "fecha_de_recepcion_para_conteo_de_terminos": {
+    "title": "FECHA DE RECEPCIÓN PARA CONTEO DE TÉRMINOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "correos_electronicos_autorizados": {
+    "title": "CORREOS ELECTRÓNICOS AUTORIZADOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "ingreso_al_aplicativo_justicia_xxi_web_tyba": {
+    "title": "INGRESO AL APLICATIVO JUSTICIA XXI WEB (TYBA)",
+    "desc": "PASO A PASO: Abrir navegador Chrome o Edge recomendado...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Abrir navegador Chrome o Edge recomendado",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Copiar URL: https://procesojudicial.ramajudicial.gov.co/Justicia21/...",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Pegar en la barra de direcciones y presionar Enter",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Hacer clic en opción 'Justicia XXI Web' para ingresar",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Digitar usuario y contraseña asignados",
+        "tip": ""
+      }
+    ]
+  },
+  "ingreso_interfaz_de_usuario_al_aplicativo_justicia_xxi_web_tyba": {
+    "title": "INGRESO INTERFAZ DE USUARIO AL APLICATIVO JUSTICIA XXI WEB (TYBA)",
+    "desc": "PASO A PASO: Ingresar con usuario y contraseña...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ingresar con usuario y contraseña",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Si olvida contraseña, usar opción 'Recordar Contraseña'",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Verificar perfil y permisos asignados",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Navegar por los menús del aplicativo",
+        "tip": ""
+      }
+    ]
+  },
+  "notificacion_de_actuaciones": {
+    "title": "NOTIFICACIÓN DE ACTUACIONES",
+    "desc": "PASO A PASO: En la lista de actuaciones, hacer clic en icono 'n...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "En la lista de actuaciones, hacer clic en icono 'notificar'",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Seleccionar sujetos procesales a notificar",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Elegir archivos adjuntos",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Hacer clic en 'Guardar' para enviar notificación",
+        "tip": ""
+      }
+    ]
+  },
+  "creacion_de_procesos": {
+    "title": "CREACIÓN DE PROCESOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "registro_de_procesos_para_reparto": {
+    "title": "REGISTRO DE PROCESOS PARA REPARTO",
+    "desc": "PASO A PASO: Ingresar al menú Administración y seleccionar 'Pro...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ingresar al menú Administración y seleccionar 'Procesos'",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Hacer clic en botón 'Agregar'",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Seleccionar Corporación, Especialidad y Tipo de Proceso",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Seleccionar Clase y Subclase de proceso",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Asociar los sujetos procesales (demandante y demandado)",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Adjuntar archivo PDF de la demanda",
+        "tip": ""
+      },
+      {
+        "num": 7,
+        "text": "Hacer clic en 'Guardar' para realizar reparto",
+        "tip": ""
+      }
+    ]
+  },
+  "asociar_los_sujetos_procesales": {
+    "title": "ASOCIAR LOS SUJETOS PROCESALES",
+    "desc": "PASO A PASO: En el proceso, ir a 'Información Sujetos Procesale...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "En el proceso, ir a 'Información Sujetos Procesales'",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Hacer clic en 'Buscar Sujeto'",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Ingresar tipo y número de identificación",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Seleccionar Tipo Sujeto (Demandante/Demandado)",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Agregar datos de contacto (dirección, teléfono, email)",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Guardar asociación",
+        "tip": ""
+      }
+    ]
+  },
+  "adjuntar_archivos": {
+    "title": "ADJUNTAR ARCHIVOS",
+    "desc": "PASO A PASO: En sección 'Archivos Adjuntos', hacer clic en busc...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "En sección 'Archivos Adjuntos', hacer clic en buscar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Seleccionar archivo PDF del computador",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Elegir tipo de archivo (demanda, anexo, prueba)",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Hacer clic en 'Agregar a la lista'",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Guardar proceso",
+        "tip": ""
+      }
+    ]
+  },
+  "registro_de_tutela_digital": {
+    "title": "REGISTRO DE TUTELA DIGITAL",
+    "desc": "PASO A PASO: Ir a Administración > Procesos > Agregar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Procesos > Agregar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Seleccionar Corporación según nível (Municipal/Circuito)",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Seleccionar Especialidad: Constitutional",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Tipo Proceso selecciona 'Acción de Tutela'",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Clase Proceso: seleccionar 'Tutela'",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Ingresar datos del accionante y accionado",
+        "tip": ""
+      },
+      {
+        "num": 7,
+        "text": "Adjuntar tutela en PDF y guardar",
+        "tip": ""
+      }
+    ]
+  },
+  "consulta_de_procesos": {
+    "title": "CONSULTA DE PROCESOS",
+    "desc": "PASO A PASO: Ir a Administración > Procesos...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Procesos",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Digitar código de proceso (23 dígitos)",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "O seleccionar rango de fechas",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Hacer clic en 'Consultar'",
+        "tip": ""
+      }
+    ]
+  },
+  "modificacion_de_procesos": {
+    "title": "MODIFICACIÓN DE PROCESOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "ocultar_sujetos_de_un_proceso": {
+    "title": "OCULTAR SUJETOS DE UN PROCESO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "anular_sujetos_procesales": {
+    "title": "ANULAR SUJETOS PROCESALES",
+    "desc": "PASO A PASO: Buscar elemento a anular...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Buscar elemento a anular",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Confirmar anulación",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Verificar que sea la última acción",
+        "tip": ""
+      }
+    ]
+  },
+  "registro_de_actuaciones": {
+    "title": "REGISTRO DE ACTUACIONES",
+    "desc": "PASO A PASO: Ir a Administración > Actuaciones...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Actuaciones",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Buscar el proceso por código",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Hacer clic en 'Consultar Registro'",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Seleccionar Ciclo (Radicación, Generales, etc.)",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Seleccionar Tipo de Actuación",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Digitar la fecha y anotación",
+        "tip": ""
+      },
+      {
+        "num": 7,
+        "text": "Adjuntar documento si es necesario",
+        "tip": ""
+      },
+      {
+        "num": 8,
+        "text": "Guardar la actuación",
+        "tip": ""
+      }
+    ]
+  },
+  "crear_una_actuacion": {
+    "title": "CREAR UNA ACTUACIÓN",
+    "desc": "PASO A PASO: Ir a opción correspondiente...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a opción correspondiente",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Diligenciar formulario",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Adjuntar documentos si aplica",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "casos_de_uso_registro_de_actuaciones": {
+    "title": "CASOS DE USO REGISTRO DE ACTUACIONES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "adjudicacion_por_conocimiento_previo_tribunal": {
+    "title": "ADJUDICACIÓN POR CONOCIMIENTO PREVIO TRIBUNAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "asignacion_por_reparto_a_otro_despacho_de_la_misma_especialidad": {
+    "title": "ASIGNACIÓN POR REPARTO A OTRO DESPACHO DE LA MISMA ESPECIALIDAD",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "asignacion_o_traslado_de_proceso_a_un_despacho_especifico_de_la_misma_especialidad": {
+    "title": "ASIGNACIÓN O TRASLADO DE PROCESO A UN DESPACHO ESPECÍFICO DE LA MISMA ESPECIALIDAD",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "envio_de_procesos_al_superior_segunda_instancia": {
+    "title": "ENVÍO DE PROCESOS AL SUPERIOR – SEGUNDA INSTANCIA",
+    "desc": "PASO A PASO: Registrar actuación de apelación...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Registrar actuación de apelación",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Seleccionar tipo: 'Envío al Superior por Interpuestos'",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Elegir efecto (devolutivo o suspensivo)",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Adjuntar pruebas y guardar",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Sistema genera reparto automático",
+        "tip": ""
+      }
+    ]
+  },
+  "anulacion_de_actuaciones": {
+    "title": "ANULACIÓN DE ACTUACIONES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_que_modifican_el_reparto": {
+    "title": "ACTUACIONES QUE MODIFICAN EL REPARTO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_que_generan_estado": {
+    "title": "ACTUACIONES QUE GENERAN ESTADO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "consulta_de_la_notificacion_enviada": {
+    "title": "CONSULTA DE LA NOTIFICACIÓN ENVIADA",
+    "desc": "PASO A PASO: Ir a Administración > Consultar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Consultar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ingresar criterios de búsqueda",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Revisar resultados",
+        "tip": ""
+      }
+    ]
+  },
+  "datos_de_la_notificacion_electronica": {
+    "title": "DATOS DE LA NOTIFICACIÓN ELECTRÓNICA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_de_secretaria": {
+    "title": "ACTUACIONES DE SECRETARÍA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "anulacion_de_reparto_por_permiso_del_juez": {
+    "title": "ANULACIÓN DE REPARTO POR PERMISO DEL JUEZ",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "anulacion_porque_no_es_un_proceso": {
+    "title": "ANULACIÓN PORQUE NO ES UN PROCESO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "cambio_de_clase_de_un_proceso": {
+    "title": "CAMBIO DE CLASE DE UN PROCESO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "cambio_de_competencia": {
+    "title": "CAMBIO DE COMPETENCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "declaracion_de_impedimento": {
+    "title": "DECLARACIÓN DE IMPEDIMENTO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_que_dan_salida_al_proceso": {
+    "title": "ACTUACIONES QUE DAN SALIDA AL PROCESO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "envio_al_superior_por_interpuestos_sin_finalizacion": {
+    "title": "ENVÍO AL SUPERIOR POR INTERPUESTOS SIN FINALIZACIÓN",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "envio_a_reparto_por_interpuestos_superior_sin_jxxi_web": {
+    "title": "ENVÍO A REPARTO POR INTERPUESTOS (SUPERIOR SIN JXXI WEB)",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "envio_al_superior_por_interpuestos_con_efecto_suspensivo": {
+    "title": "ENVÍO AL SUPERIOR POR INTERPUESTOS CON EFECTO SUSPENSIVO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "envio_al_superior_por_interpuestos_con_conocimiento_previo": {
+    "title": "ENVÍO AL SUPERIOR POR INTERPUESTOS CON CONOCIMIENTO PREVIO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "por_no_aceptacion_de_impedimento": {
+    "title": "POR NO ACEPTACIÓN DE IMPEDIMENTO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "salida_finalizando_instancia": {
+    "title": "SALIDA FINALIZANDO INSTANCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "acumulacion_de_procesos": {
+    "title": "ACUMULACIÓN DE PROCESOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_de_ambito_general": {
+    "title": "ACTUACIONES DE ÁMBITO GENERAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuacion_para_firma_de_documento": {
+    "title": "ACTUACIÓN PARA FIRMA DE DOCUMENTO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "firma_de_un_documento": {
+    "title": "FIRMA DE UN DOCUMENTO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "recuperacion_segunda_clave_para_la_firma": {
+    "title": "RECUPERACIÓN SEGUNDA CLAVE PARA LA FIRMA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "fijacion_estados": {
+    "title": "FIJACIÓN ESTADOS",
+    "desc": "PASO A PASO: Ir a Administración > Fijación Estados...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Fijación Estados",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Seleccionar fecha de fijación",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Hacer clic en 'Consultar'",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Revisar previsualización del estado",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Confirmar para publicación",
+        "tip": ""
+      }
+    ]
+  },
+  "registro_de_actuaciones_para_tutelas": {
+    "title": "REGISTRO DE ACTUACIONES PARA TUTELAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "admision_de_la_tutela": {
+    "title": "ADMISIÓN DE LA TUTELA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "notificacion_auto_admisorio": {
+    "title": "NOTIFICACIÓN AUTO ADMISORIO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "contestacion": {
+    "title": "CONTESTACIÓN",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "sentencia": {
+    "title": "SENTENCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "notificacion_de_la_sentencia": {
+    "title": "NOTIFICACIÓN DE LA SENTENCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "impugnacion_de_la_tutela": {
+    "title": "IMPUGNACIÓN DE LA TUTELA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "respuesta_a_la_impugnacion": {
+    "title": "RESPUESTA A LA IMPUGNACIÓN",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "remision_al_superior": {
+    "title": "REMISIÓN AL SUPERIOR",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_de_segunda_instancia": {
+    "title": "ACTUACIONES DE SEGUNDA INSTANCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "sentencia_de_segunda_instancia": {
+    "title": "SENTENCIA DE SEGUNDA INSTANCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "notificacion_de_la_sentencia_en_segunda_instancia": {
+    "title": "NOTIFICACIÓN DE LA SENTENCIA EN SEGUNDA INSTANCIA",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "remision_a_la_corte_constitucional": {
+    "title": "REMISIÓN A LA CORTE CONSTITUCIONAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "remite_a_corte_para_subsanar": {
+    "title": "REMITE A CORTE PARA SUBSANAR",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "remision_para_completar_expediente": {
+    "title": "REMISIÓN PARA COMPLETAR EXPEDIENTE",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "actuaciones_que_registra_la_corte_constitucional": {
+    "title": "ACTUACIONES QUE REGISTRA LA CORTE CONSTITUCIONAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "devolucion_para_subsanar": {
+    "title": "DEVOLUCIÓN PARA SUBSANAR",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "exclusion_de_seleccion": {
+    "title": "EXCLUSIÓN DE SELECCIÓN",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "remite_para_custodia_del_proceso": {
+    "title": "REMITE PARA CUSTODIA DEL PROCESO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "envio_a_penal_de_conocimiento": {
+    "title": "ENVÍO A PENAL DE CONOCIMIENTO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "procedimiento_para_reingreso_de_procesos_anulados_y_archivados": {
+    "title": "PROCEDIMIENTO PARA REINGRESO DE PROCESOS ANULADOS Y ARCHIVADOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "procedimiento_para_el_registro_y_gestion_de_audiencias": {
+    "title": "PROCEDIMIENTO PARA EL REGISTRO Y GESTIÓN DE AUDIENCIAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "creacion_de_procesos_para_reparto": {
+    "title": "CREACIÓN DE PROCESOS PARA REPARTO",
+    "desc": "PASO A PASO: Ir a Administración > Procesos...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Procesos",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Seleccionar Ley (906, 1826 o 600)",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Elegir Tipo de Proceso (Audiencia Preliminar, etc.)",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Ingresar código del proceso de Fiscalía",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Agregar sujetos procesales",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Guardar para ejecutar reparto automático",
+        "tip": ""
+      }
+    ]
+  },
+  "registro_y_gestion_de_audiencias": {
+    "title": "REGISTRO Y GESTIÓN DE AUDIENCIAS",
+    "desc": "PASO A PASO: Seleccionar tipo de audiencia...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Seleccionar tipo de audiencia",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Crear proceso para reparto",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Programar fecha y hora",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Registrar inicio de audiencia",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Suspender o reanudar según sea necesario",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Finalizar y guardar acta",
+        "tip": ""
+      }
+    ]
+  },
+  "inicio_de_audiencias": {
+    "title": "INICIO DE AUDIENCIAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "suspension_de_audiencias": {
+    "title": "SUSPENSIÓN DE AUDIENCIAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "reanudacion_de_audiencias": {
+    "title": "REANUDACIÓN DE AUDIENCIAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "finalizacion_de_audiencias": {
+    "title": "FINALIZACIÓN DE AUDIENCIAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "procedimiento_para_el_reparto_de_procesos_penales_fuera_de_horario": {
+    "title": "PROCEDIMIENTO PARA EL REPARTO DE PROCESOS PENALES FUERA DE HORARIO",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "creacion_de_turnos_en_horario_adicional": {
+    "title": "CREACIÓN DE TURNOS EN HORARIO ADICIONAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "consulta_y_anulacion_de_turnos": {
+    "title": "CONSULTA Y ANULACIÓN DE TURNOS",
+    "desc": "PASO A PASO: Ir a Administración > Consultar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Consultar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ingresar criterios de búsqueda",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Revisar resultados",
+        "tip": ""
+      }
+    ]
+  },
+  "procedimiento_para_el_reparto_de_habeas_corpus_fuera_de_horario_laboral": {
+    "title": "PROCEDIMIENTO PARA EL REPARTO DE HABEAS CORPUS FUERA DE HORARIO LABORAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "creacion_turnos_en_horario_adicional": {
+    "title": "CREACIÓN TURNOS EN HORARIO ADICIONAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "registro_de_usuarios": {
+    "title": "REGISTRO DE USUARIOS",
+    "desc": "PASO A PASO: Ingresar con usuario Administrador...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ingresar con usuario Administrador",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ir a Seguridad > Usuarios > Agregar",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Ingresar datos básicos del usuario",
+        "tip": ""
+      },
+      {
+        "num": 4,
+        "text": "Seleccionar Rol (Juez, Secretaría, Oficina Judicial)",
+        "tip": ""
+      },
+      {
+        "num": 5,
+        "text": "Asociar al despacho correspondiente",
+        "tip": ""
+      },
+      {
+        "num": 6,
+        "text": "Guardar - usuario recibe correo con contraseña",
+        "tip": ""
+      }
+    ]
+  },
+  "pasos_para_el_ingreso_de_nuevos_usuarios": {
+    "title": "PASOS PARA EL INGRESO DE NUEVOS USUARIOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "creacion_transformacion_de_despacho_judicial": {
+    "title": "CREACIÓN / TRANSFORMACIÓN DE DESPACHO JUDICIAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "intercambio_de_juez_en_un_despacho_judicial": {
+    "title": "INTERCAMBIO DE JUEZ EN UN DESPACHO JUDICIAL",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "traslado_masivo_de_procesos": {
+    "title": "TRASLADO MASIVO DE PROCESOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "procedimiento_para_el_registro_nacional_de_personas_emplazadas": {
+    "title": "PROCEDIMIENTO PARA EL REGISTRO NACIONAL DE PERSONAS EMPLAZADAS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "identificacion_de_los_sujetos_a_emplazar": {
+    "title": "IDENTIFICACIÓN DE LOS SUJETOS A EMPLAZAR",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "consultas_publicas": {
+    "title": "CONSULTAS PÚBLICAS",
+    "desc": "PASO A PASO: Ir a Administración > Consultar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Consultar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ingresar criterios de búsqueda",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Revisar resultados",
+        "tip": ""
+      }
+    ]
+  },
+  "consulta_publica_de_procesos_judiciales": {
+    "title": "CONSULTA PÚBLICA DE PROCESOS JUDICIALES",
+    "desc": "PASO A PASO: Ir a Administración > Consultar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Consultar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ingresar criterios de búsqueda",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Revisar resultados",
+        "tip": ""
+      }
+    ]
+  },
+  "consulta_de_fijaciones_de_estado": {
+    "title": "CONSULTA DE FIJACIONES DE ESTADO",
+    "desc": "PASO A PASO: Ir a Administración > Consultar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Consultar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ingresar criterios de búsqueda",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Revisar resultados",
+        "tip": ""
+      }
+    ]
+  },
+  "validacion_de_documentosarchivos": {
+    "title": "VALIDACIÓN DE DOCUMENTOS/ARCHIVOS",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "descarga_archivos_de_notificaciones": {
+    "title": "DESCARGA ARCHIVOS DE NOTIFICACIONES",
+    "desc": "PASO A PASO: Ir a la sección correspondiente del menú...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a la sección correspondiente del menú",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Realizar la acción según el proceso",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Confirmar y guardar cambios",
+        "tip": ""
+      }
+    ]
+  },
+  "consulta_publica_de_emplazamiento": {
+    "title": "CONSULTA PÚBLICA DE EMPLAZAMIENTO",
+    "desc": "PASO A PASO: Ir a Administración > Consultar...",
+    "steps": [
+      {
+        "num": 1,
+        "text": "Ir a Administración > Consultar",
+        "tip": ""
+      },
+      {
+        "num": 2,
+        "text": "Ingresar criterios de búsqueda",
+        "tip": ""
+      },
+      {
+        "num": 3,
+        "text": "Revisar resultados",
+        "tip": ""
+      }
+    ]
+  }
+}
