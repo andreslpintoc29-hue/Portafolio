@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "notebooklm": {
+      "command": "python",
+      "args": ["-m", "uv", "tool", "run", "--from", "notebooklm-skill", "notebooklm-mcp"],
+      "description": "NotebookLM bridge - consulta tus notebooks desde Antigravity",
+      "env": {
+        "NOTEBOOKLM_STORAGE": "C:\\Users\\USUARIO1\\.notebooklm\\storage_state.json"
+      }
+    }
+  }
+}
