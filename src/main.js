@@ -1,6 +1,5 @@
 import './style.css'
 import { gsap } from 'gsap'
-import tybaData from './tybaData.json'
 
 document.addEventListener('DOMContentLoaded', () => {
   initNeuralParticles();
@@ -11,87 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   animateSystemBootstrap();
   initITDashboard();
   initHoloBrain();
-  initTybaGrid();
 });
-
-
-
-function initTybaGrid() {
-  const searchInput = document.getElementById('tyba-search-input');
-  const grid = document.getElementById('tyba-grid');
-  const nodes = document.querySelectorAll('.tyba-node');
-  
-  const modal = document.getElementById('tyba-course-modal');
-  const modalClose = document.getElementById('tyba-modal-close');
-  const modalTitle = document.getElementById('tyba-modal-title');
-  const modalBody = document.getElementById('tyba-modal-body');
-
-  if (!searchInput || !grid) return;
-
-  // --- Search Logic ---
-  searchInput.addEventListener('input', (e) => {
-    const term = e.target.value.toLowerCase();
-    nodes.forEach(node => {
-      const text = node.innerText.toLowerCase();
-      const isMatch = text.includes(term);
-      node.style.display = isMatch ? 'flex' : 'none';
-      
-      if (isMatch) {
-        gsap.to(node, { scale: 1, opacity: 1, duration: 0.3 });
-      }
-    });
-  });
-
-  // --- Modal Logic ---
-  nodes.forEach(node => {
-    node.addEventListener('click', () => {
-      const caseId = node.getAttribute('data-case');
-      const data = tybaData[caseId];
-
-      if (data) {
-        modalTitle.innerText = data.title;
-        modalBody.innerHTML = '';
-
-        data.steps.forEach(step => {
-          const stepEl = document.createElement('div');
-          stepEl.className = 'tyba-course-step';
-          stepEl.innerHTML = `
-            <span class="tyba-course-step-num">PASO ${step.num}</span>
-            <h4 class="tyba-course-step-title">${step.title}</h4>
-            <p class="tyba-course-step-text">${step.text}</p>
-            <div class="tyba-course-step-tip">
-              <p>${step.tip}</p>
-            </div>
-          `;
-          modalBody.appendChild(stepEl);
-        });
-
-        modal.classList.remove('hidden');
-        gsap.fromTo('.tyba-modal-content', 
-          { scale: 0.8, opacity: 0 }, 
-          { scale: 1, opacity: 1, duration: 0.5, ease: 'power4.out' }
-        );
-      }
-    });
-  });
-
-  if (modalClose) {
-    modalClose.addEventListener('click', () => {
-      gsap.to('.tyba-modal-content', {
-        scale: 0.8,
-        opacity: 0,
-        duration: 0.3,
-        onComplete: () => modal.classList.add('hidden')
-      });
-    });
-  }
-
-  // Close on backdrop
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) modalClose.click();
-  });
-}
-
 
 function initHoloBrain() {
   const canvas = document.getElementById('holo-particles');
@@ -245,27 +164,25 @@ function initNavigation() {
   const navJudicial = document.getElementById('nav-judicial');
   const navProfile = document.getElementById('nav-profile');
   const navIt = document.getElementById('nav-it');
-  const navTyba = document.getElementById('nav-tyba');
   
   const viewFiscalia = document.getElementById('view-fiscalia');
   const viewJudicial = document.getElementById('view-judicial');
   const viewProfile = document.getElementById('view-profile');
   const viewIt = document.getElementById('view-it');
-  const viewTyba = document.getElementById('view-tyba');
 
   // Helper to switch views with an animation
   function switchView(activeNav, activeView) {
     if (!activeNav || !activeView) return;
     
     // Reset all navs
-    [navFiscalia, navJudicial, navProfile, navIt, navTyba].forEach(nav => {
+    [navFiscalia, navJudicial, navProfile, navIt].forEach(nav => {
       if(nav) nav.classList.remove('active')
     });
     // Set active
     activeNav.classList.add('active');
 
     // Hide all views instantly
-    [viewFiscalia, viewJudicial, viewProfile, viewIt, viewTyba].forEach(view => {
+    [viewFiscalia, viewJudicial, viewProfile, viewIt].forEach(view => {
       if (view && !view.classList.contains('hidden')) {
         view.classList.add('hidden');
         view.classList.remove('active');
@@ -281,7 +198,6 @@ function initNavigation() {
   if(navJudicial) navJudicial.addEventListener('click', (e) => { e.preventDefault(); switchView(navJudicial, viewJudicial); });
   if(navProfile) navProfile.addEventListener('click', (e) => { e.preventDefault(); switchView(navProfile, viewProfile); });
   if(navIt) navIt.addEventListener('click', (e) => { e.preventDefault(); switchView(navIt, viewIt); });
-  if(navTyba) navTyba.addEventListener('click', (e) => { e.preventDefault(); switchView(navTyba, viewTyba); });
 }
 
 // --- 3. PDF Viewer Logic ---
@@ -300,7 +216,7 @@ function initPdfViewer() {
       if (!pdfPath) return;
 
       modalTitle.innerText = `ANALIZANDO: ${label}`;
-      iframe.src = `${import.meta.env.BASE_URL}${pdfPath}`;
+      iframe.src = `/${pdfPath}`;
       
       modal.classList.remove('hidden');
       gsap.fromTo('.pdf-modal-content', 
@@ -434,7 +350,7 @@ function initGemaModal() {
       title: "SCRIPT MANTENIMIENTO INTEGRAL",
       desc: "Herramienta de diagnóstico y reparación profunda (Limpieza de Temporales, Cache DNS, Reinicio Cola de Impresión y WIA - Escaner).",
       steps: `<h4>Instrucciones para Desbloquear Tu PC</h4><p>1. Da clic en "Descargar Script" abajo.</p><p>2. En tu PC, hazle doble clic a <code>Soporte_IT_Andres_Pinto.bat</code> para que barra y solucione el entorno sin afectar tus documentos.</p>`,
-      url: import.meta.env.BASE_URL + "Soporte_IT_Andres_Pinto.bat",
+      url: "/Soporte_IT_Andres_Pinto.bat",
       btnText: "⬇️ DESCARGAR SCRIPT (.bat)"
     }
   };
@@ -749,22 +665,21 @@ wifi: {
     if (statusEl) statusEl.textContent = 'EJECUTANDO: ' + config.label;
 
     // --- Auto-Download the real .bat for each action ---
-    const base = import.meta.env.BASE_URL;
-    const scriptMap = {
-      clean:    base + 'it_limpieza.bat',
-      printer:  base + 'it_impresora.bat',
-      scanner:  base + 'it_escaner.bat',
-      network:  base + 'it_red.bat',
-      update:   base + 'it_update.bat',
-      explorer: base + 'it_explorer.bat',
-      disco:    base + 'it_disco.bat',
-      ram:      base + 'it_ram.bat',
-      firewall: base + 'it_firewall.bat',
-      wifi:     base + 'it_wifi.bat',
-      usb:      base + 'it_usb.bat',
-      audio:    base + 'it_audio.bat',
-      wifi_boost: base + 'it_wifi_boost.bat',
-      god:      base + 'Soporte_IT_Andres_Pinto.bat'
+const scriptMap = {
+      clean:    '/it_limpieza.bat',
+      printer:  '/it_impresora.bat',
+      scanner:  '/it_escaner.bat',
+      network:  '/it_red.bat',
+      update:   '/it_update.bat',
+      explorer: '/it_explorer.bat',
+      disco:    '/it_disco.bat',
+      ram:      '/it_ram.bat',
+      firewall: '/it_firewall.bat',
+      wifi:     '/it_wifi.bat',
+      usb:      '/it_usb.bat',
+      audio:    '/it_audio.bat',
+      wifi_boost: '/it_wifi_boost.bat',
+      god:      '/Soporte_IT_Andres_Pinto.bat'
     };
     if (scriptMap[action]) {
       setTimeout(function() {
