@@ -11,85 +11,87 @@ document.addEventListener('DOMContentLoaded', () => {
   animateSystemBootstrap();
   initITDashboard();
   initHoloBrain();
-  initTybaNeuralMap();
-  initTybaSearch();
+  initTybaGrid();
 });
 
-function initTybaSearch() {
+
+
+function initTybaGrid() {
   const searchInput = document.getElementById('tyba-search-input');
-  if (!searchInput) return;
+  const grid = document.getElementById('tyba-grid');
+  const nodes = document.querySelectorAll('.tyba-node');
+  
+  const modal = document.getElementById('tyba-course-modal');
+  const modalClose = document.getElementById('tyba-modal-close');
+  const modalTitle = document.getElementById('tyba-modal-title');
+  const modalBody = document.getElementById('tyba-modal-body');
 
+  if (!searchInput || !grid) return;
+
+  // --- Search Logic ---
   searchInput.addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-    const nodes = document.querySelectorAll('.tyba-node');
-
+    const term = e.target.value.toLowerCase();
     nodes.forEach(node => {
-      const label = node.querySelector('.brain-label').innerText.toLowerCase();
-      const cat = node.querySelector('h3').innerText.toLowerCase();
+      const text = node.innerText.toLowerCase();
+      const isMatch = text.includes(term);
+      node.style.display = isMatch ? 'flex' : 'none';
       
-      if (label.includes(query) || cat.includes(query)) {
-        node.style.display = 'flex';
-      } else {
-        node.style.display = 'none';
+      if (isMatch) {
+        gsap.to(node, { scale: 1, opacity: 1, duration: 0.3 });
       }
     });
   });
-}
 
-function initTybaNeuralMap() {
-  const nodes = document.querySelectorAll('.tyba-node');
-  const modal = document.getElementById('tyba-course-modal');
-  const closeBtn = document.getElementById('tyba-modal-close');
-  
-  const modalTitle = document.getElementById('tyba-modal-title');
-  const modalSubtitle = document.getElementById('tyba-modal-subtitle');
-  const modalBody = document.getElementById('tyba-modal-body');
-
-  if (!modal) return;
-
-  closeBtn.addEventListener('click', () => {
-    modal.classList.add('hidden');
-  });
-
+  // --- Modal Logic ---
   nodes.forEach(node => {
     node.addEventListener('click', () => {
       const caseId = node.getAttribute('data-case');
-      if (!caseId || !tybaData[caseId]) return;
-
       const data = tybaData[caseId];
-      const cat = node.querySelector('h3').innerText;
 
-      modalSubtitle.innerText = cat;
-      modalTitle.innerText = data.title;
-      
-      // Generate steps HTML
-      let stepsHtml = '';
-      if (data.desc) {
-         stepsHtml += `<p style="color: var(--text-dim); margin-bottom: 20px; font-size: 1.05rem; line-height: 1.5;">${data.desc}</p>`;
-      }
+      if (data) {
+        modalTitle.innerText = data.title;
+        modalBody.innerHTML = '';
 
-      if (data.steps && data.steps.length > 0) {
-        data.steps.forEach((step, index) => {
-          stepsHtml += `
-            <div class="tyba-course-step">
-              <span class="tyba-course-step-num">PASO ${index + 1}</span>
-              <h3 class="tyba-course-step-title">${step.title}</h3>
-              <p class="tyba-course-step-text">${step.text}</p>
-              <div class="tyba-course-step-tip">
-                <p>${step.tip}</p>
-              </div>
+        data.steps.forEach(step => {
+          const stepEl = document.createElement('div');
+          stepEl.className = 'tyba-course-step';
+          stepEl.innerHTML = `
+            <span class="tyba-course-step-num">PASO ${step.num}</span>
+            <h4 class="tyba-course-step-title">${step.title}</h4>
+            <p class="tyba-course-step-text">${step.text}</p>
+            <div class="tyba-course-step-tip">
+              <p>${step.tip}</p>
             </div>
           `;
+          modalBody.appendChild(stepEl);
         });
-      } else {
-        stepsHtml += `<p style="color: var(--accent-cyan);">Datos del paso a paso no encontrados para este módulo.</p>`;
-      }
 
-      modalBody.innerHTML = stepsHtml;
-      modal.classList.remove('hidden');
+        modal.classList.remove('hidden');
+        gsap.fromTo('.tyba-modal-content', 
+          { scale: 0.8, opacity: 0 }, 
+          { scale: 1, opacity: 1, duration: 0.5, ease: 'power4.out' }
+        );
+      }
     });
   });
+
+  if (modalClose) {
+    modalClose.addEventListener('click', () => {
+      gsap.to('.tyba-modal-content', {
+        scale: 0.8,
+        opacity: 0,
+        duration: 0.3,
+        onComplete: () => modal.classList.add('hidden')
+      });
+    });
+  }
+
+  // Close on backdrop
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modalClose.click();
+  });
 }
+
 
 function initHoloBrain() {
   const canvas = document.getElementById('holo-particles');

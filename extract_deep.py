@@ -8,24 +8,28 @@ def slugify(value):
     return re.sub(r'[-\s]+', '_', value).strip('-_')
 
 def clean_text(text):
-    # Brutal regex to completely destroy any trace of headers and footers
-    # The user specifically complained about:
-    # "MANUAL DE PROCEDIMIENTOS Página: 0/0 SISTEMA DE GESTIÓN DE PROCESOS JUDICIALES JUSTICIA XXI WEB - TYBA Fecha: 17/08/2023"
+    # Aggressive cleaning of headers and footers
+    # The header pattern is usually: MANUAL DE PROCEDIMIENTOS Página: X/Y SISTEMA DE GESTIÓN DE PROCESOS JUDICIALES JUSTICIA XXI WEB - TYBA Fecha: DD/MM/YYYY
     
-    # Remove literal occurrences of headers
-    text = re.sub(r'MANUAL DE PROCEDIMIENTOS\s*Página:\s*\d+/\d+', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'MANUAL DE PROCEDIMIENTOS.*?(?:Página|Pagina):\s*\d+/\d+', '', text, flags=re.IGNORECASE|re.DOTALL)
-    text = re.sub(r'SISTEMA DE GESTIÓN DE PROCESOS JUDICIALES\s*JUSTICIA XXI WEB - TYBA', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'SISTEMA DE GESTIÓN DE PROCESOS JUDICIALES.*?TYBA', '', text, flags=re.IGNORECASE|re.DOTALL)
-    text = re.sub(r'Fecha:\s*\d{2}/\d{2}/\d{4}', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'Fecha:\s*\d{2}-\d{2}-\d{4}', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'Ir a contenido', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'--- PAGE \d+ ---', '', text)
+    # Pre-process: join lines but keep double newlines for paragraph separation if needed
+    # Actually, the current extract() already passes the raw chunk.
+    
+    # Remove the specific multi-line header/footer pattern
+    patterns = [
+        r'MANUAL\s+DE\s+PROCEDIMIENTOS.*?P[áa]gina:\s*\d+/\d+.*?SISTEMA\s+DE\s+GESTI[ÓO]N\s+DE\s+PROCESOS\s+JUDICIALES.*?JUSTICIA\s+XXI\s+WEB\s+-\s+TYBA.*?Fecha:.*?\d{2}/\d{2}/\d{4}',
+        r'SISTEMA\s+DE\s+GESTI[ÓO]N\s+DE\s+PROCESOS\s+JUDICIALES.*?TYBA',
+        r'MANUAL\s+DE\s+PROCEDIMIENTOS.*?P[áa]gina:\s*\d+/\d+',
+        r'RAMA\s+JUDICIAL.*?CONSEJO\s+SUPERIOR.*?JUDICATURA',
+        r'Fecha:\s*\d{2}[/\-]\d{2}[/\-]\d{4}',
+        r'Ir\s+a\s+contenido',
+        r'--- PAGE \d+ ---'
+    ]
+    
+    for p in patterns:
+        text = re.sub(p, ' ', text, flags=re.IGNORECASE|re.DOTALL)
     
     # Remove multiple spaces and newlines
-    text = re.sub(r'\n+', ' ', text)
-    text = re.sub(r'\s{2,}', ' ', text)
-    
+    text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
 def extract():
@@ -41,7 +45,7 @@ def extract():
         if match:
             title = match.group(1).strip()
             page = int(match.group(2))
-            if title.lower() in ["presentación", "glosario"]:
+            if title.lower() in ["presentación", "glosario", "contenido"]:
                 continue
             modules.append({"title": title, "page": page, "id": slugify(title)})
             
@@ -72,46 +76,64 @@ def extract():
         raw_content = full_text[start_idx:end_idx]
         clean_content = clean_text(raw_content)
         
-        if clean_content.lower().startswith(mod['title'].lower()):
+        # Remove the title from the start of content if it's there
+        if clean_content.upper().startswith(mod['title'].upper()):
             clean_content = clean_content[len(mod['title']):].strip()
             
         # Break into sentences/paragraphs
-        sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z0-9])', clean_content)
-        valid_sentences = [s.strip() for s in sentences if len(s.strip()) > 20]
+        # Split by dots followed by space and capital letter
+        sentences = re.split(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÑ0-9])', clean_content)
+        valid_sentences = [s.strip() for s in sentences if len(s.strip()) > 30]
         
-        desc = "Procedimiento detallado según el Manual Oficial de Justicia XXI Web."
+        desc = f"Capacitación técnica sobre {mod['title']} según el manual oficial."
         if valid_sentences:
-            desc = valid_sentences[0][:200] + "..." if len(valid_sentences[0]) > 200 else valid_sentences[0]
+            desc = valid_sentences[0]
+            if len(desc) > 250: desc = desc[:247] + "..."
             
         steps = []
         step_num = 1
         
+        # If we have very few sentences, try to split by other markers like numbers or bullets
+        if len(valid_sentences) < 3:
+            # Try splitting by numbers like "1. ", "2. "
+            parts = re.split(r'\s+\d+\.\s+', clean_content)
+            if len(parts) > 2:
+                valid_sentences = [p.strip() for p in parts if len(p.strip()) > 10]
+
         for sent in valid_sentences:
-            if step_num > 15: break
+            if step_num > 12: break
             
-            # Create a nice short title for the button (first 8-10 words, or up to first comma)
-            # This avoids "eating words" with "..." and gives a clean button label
+            # Clean up the sentence from any remaining page numbers or headers
+            sent = re.sub(r'P[áa]gina:\s*\d+/\d+', '', sent)
+            sent = sent.strip()
+            if not sent: continue
+
+            # Generate a better title
             words = sent.split()
-            first_comma = sent.find(',')
-            if first_comma != -1 and first_comma < 60:
-                short_title = sent[:first_comma]
-            else:
-                short_title = " ".join(words[:12])
-                
-            tip = "Atención a este detalle."
-            if "clic" in sent.lower() or "botón" in sent.lower(): tip = "Acción requerida en el sistema."
-            if "importante" in sent.lower() or "nota" in sent.lower(): tip = "Información crucial."
+            short_title = " ".join(words[:8])
+            if len(short_title) > 60: short_title = short_title[:57] + "..."
+            
+            tip = "Dato del manual"
+            if any(k in sent.lower() for k in ["clic", "botón", "seleccione", "ingrese", "digite"]):
+                tip = "Acción en el sistema TYBA"
+            elif any(k in sent.lower() for k in ["importante", "nota", "atención", "recuerde"]):
+                tip = "Observación importante"
             
             steps.append({
                 "num": step_num,
-                "title": short_title, # The button text
-                "text": sent,         # The full explanation inside
+                "title": short_title.upper(),
+                "text": sent,
                 "tip": tip
             })
             step_num += 1
             
         if not steps:
-            steps = [{"num": 1, "title": "Información general del módulo", "text": f"Este módulo no contiene pasos específicos en la página {start_page}, pero hace parte integral del proceso de {mod['title']}.", "tip": "Información general"}]
+            steps = [{
+                "num": 1, 
+                "title": "CONSULTAR MANUAL", 
+                "text": f"Para este módulo ({mod['title']}), consulte la página {start_page} del manual para detalles específicos.", 
+                "tip": "Referencia manual"
+            }]
             
         tyba_data[mod['id']] = {
             "title": mod['title'].upper(),
