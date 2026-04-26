@@ -3,6 +3,6 @@
         <h3>${e.title}</h3>
         <p>${e.steps.length} PASOS</p>
       `,t.addEventListener(`click`,()=>_(e)),i.appendChild(t)})}function _(e){p=e,m=0,f.innerText=e.title,d.innerText=e.steps.length,i.classList.add(`hidden`),a.classList.remove(`hidden`),v()}o.addEventListener(`click`,()=>{a.classList.add(`hidden`),i.classList.remove(`hidden`),$.from(`.tyba-module-card`,{opacity:0,y:20,stagger:.05,duration:.4})});function v(){s.innerHTML=``;let e=p.steps,t=Math.min(m+3,e.length);if(p.image&&m===0){let e=document.createElement(`div`);e.className=`tyba-slide-image-wrapper`,e.innerHTML=`
-        <img src="/${p.image}" class="tyba-real-screenshot" alt="Captura Real TYBA">
+        <img src="${p.image}" class="tyba-real-screenshot" alt="Captura Real TYBA">
         <div class="scan-line"></div>
       `,s.appendChild(e)}for(let n=m;n<t;n++){let t=document.createElement(`div`);t.className=`tyba-slide`,t.innerHTML=`<p>${e[n]}</p>`,s.appendChild(t)}u.innerText=`${m+1}-${t}`,c.disabled=m===0,l.disabled=t>=e.length}l.addEventListener(`click`,()=>{m+3<p.steps.length&&(m+=3,$.to(`.tyba-slide`,{x:50,opacity:0,duration:.2,stagger:.05,onComplete:v}))}),c.addEventListener(`click`,()=>{m-3>=0&&(m-=3,$.to(`.tyba-slide`,{x:-50,opacity:0,duration:.2,stagger:.05,onComplete:v}))})}
