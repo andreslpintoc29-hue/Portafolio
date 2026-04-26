@@ -23,16 +23,17 @@
             height: 100%;
             border: none;
         }
-        /* PARCHE LOCALIZADO PARA LA MARCA DE AGUA */
+        /* MEGA PARCHE PARA LA MARCA DE AGUA (30% DEL ANCHO) */
         .watermark-shield {
             position: absolute;
-            bottom: 45px; /* Encima de los controles de Google */
+            bottom: 45px;
             right: 0;
-            width: 200px; /* Solo el ancho necesario */
-            height: 50px;
+            width: 30%; /* Ocupa casi un tercio de la página */
+            height: 65px;
             background: #000;
             z-index: 9999;
             pointer-events: none;
+            border-left: 1px solid rgba(0, 255, 255, 0.1);
         }
     </style>
 </head>
