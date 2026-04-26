@@ -23,12 +23,23 @@
             height: 100%;
             border: none;
         }
+        /* FRANJA NEGRA GRUESA DE LADO A LADO */
+        .watermark-shield {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: #000;
+            z-index: 9999;
+            pointer-events: none;
+        }
     </style>
 </head>
 <body>
     <div class="viewer-container">
-        <!-- VIDEO DE GOOGLE DRIVE EN MODO PREVIEW -->
         <iframe src="https://drive.google.com/file/d/1v3sp-p_qcsKLahA3EtQI3_LgVAJqU9EK/preview" allow="autoplay"></iframe>
+        <div class="watermark-shield"></div>
     </div>
 </body>
 </html>

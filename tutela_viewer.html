@@ -23,16 +23,17 @@
             height: 100%;
             border: none;
         }
-        /* ESCUDO PARA TAPAR LA MARCA DE AGUA */
+        /* FRANJA NEGRA GRUESA DE LADO A LADO */
         .watermark-shield {
             position: absolute;
-            bottom: 55px; /* Encima de los controles de Google */
-            right: 20px;
-            width: 170px;
-            height: 40px;
+            bottom: 45px; /* Justo encima de los controles de Google */
+            left: 0;
+            width: 100%;
+            height: 60px; /* Franja gruesa */
             background: #000;
             z-index: 9999;
             pointer-events: none;
+            border-top: 1px solid rgba(0, 255, 255, 0.1);
         }
     </style>
 </head>
