@@ -1,4 +1,5 @@
 import './style.css'
+import { tybaModules } from './tybaSteps.js'
 import { gsap } from 'gsap'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -7,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initPdfViewer();
   initGemaModal();
+  initAprendeTyba();
   animateSystemBootstrap();
   initITDashboard();
   initHoloBrain();
@@ -216,7 +218,7 @@ function initPdfViewer() {
       if (!pdfPath) return;
 
       modalTitle.innerText = `ANALIZANDO: ${label}`;
-      iframe.src = `/${pdfPath}`;
+      iframe.src = pdfPath;
       
       modal.classList.remove('hidden');
       gsap.fromTo('.pdf-modal-content', 
@@ -350,7 +352,7 @@ function initGemaModal() {
       title: "SCRIPT MANTENIMIENTO INTEGRAL",
       desc: "Herramienta de diagnóstico y reparación profunda (Limpieza de Temporales, Cache DNS, Reinicio Cola de Impresión y WIA - Escaner).",
       steps: `<h4>Instrucciones para Desbloquear Tu PC</h4><p>1. Da clic en "Descargar Script" abajo.</p><p>2. En tu PC, hazle doble clic a <code>Soporte_IT_Andres_Pinto.bat</code> para que barra y solucione el entorno sin afectar tus documentos.</p>`,
-      url: "/Soporte_IT_Andres_Pinto.bat",
+      url: "Soporte_IT_Andres_Pinto.bat",
       btnText: "⬇️ DESCARGAR SCRIPT (.bat)"
     }
   };
@@ -666,20 +668,20 @@ wifi: {
 
     // --- Auto-Download the real .bat for each action ---
 const scriptMap = {
-      clean:    '/it_limpieza.bat',
-      printer:  '/it_impresora.bat',
-      scanner:  '/it_escaner.bat',
-      network:  '/it_red.bat',
-      update:   '/it_update.bat',
-      explorer: '/it_explorer.bat',
-      disco:    '/it_disco.bat',
-      ram:      '/it_ram.bat',
-      firewall: '/it_firewall.bat',
-      wifi:     '/it_wifi.bat',
-      usb:      '/it_usb.bat',
-      audio:    '/it_audio.bat',
-      wifi_boost: '/it_wifi_boost.bat',
-      god:      '/Soporte_IT_Andres_Pinto.bat'
+      clean:    'it_limpieza.bat',
+      printer:  'it_impresora.bat',
+      scanner:  'it_escaner.bat',
+      network:  'it_red.bat',
+      update:   'it_update.bat',
+      explorer: 'it_explorer.bat',
+      disco:    'it_disco.bat',
+      ram:      'it_ram.bat',
+      firewall: 'it_firewall.bat',
+      wifi:     'it_wifi.bat',
+      usb:      'it_usb.bat',
+      audio:    'it_audio.bat',
+      wifi_boost: 'it_wifi_boost.bat',
+      god:      'Soporte_IT_Andres_Pinto.bat'
     };
     if (scriptMap[action]) {
       setTimeout(function() {
@@ -741,3 +743,299 @@ setTimeout(function() {
   }
 
 }
+// --- 7. APRENDE TYBA WITH ANDRÉS ---
+// --- 7. APRENDE TYBA WITH ANDRÉS (Google Drive Portal) ---
+function initAprendeTyba() {
+  const btnOpen = document.getElementById('nav-aprende-tyba');
+  const modal = document.getElementById('tyba-learning-module');
+  const btnClose = document.getElementById('close-tyba-learning');
+  const modulesGrid = document.getElementById('tyba-modules-grid');
+  const viewer = document.getElementById('tyba-slides-viewer');
+  const btnBack = document.getElementById('back-to-modules');
+  const moduleTitle = document.getElementById('current-module-title');
+  const iframe = document.getElementById('tyba-drive-frame');
+
+  // Open Modal (Nav Button)
+  if(btnOpen) {
+    btnOpen.addEventListener('click', (e) => {
+      e.preventDefault();
+      renderModules();
+      modal.classList.remove('hidden');
+      viewer.classList.add('hidden');
+      modulesGrid.classList.remove('hidden');
+      
+      gsap.fromTo('.tyba-learning-content', 
+        { scale: 0.8, opacity: 0 }, 
+        { scale: 1, opacity: 1, duration: 0.6, ease: 'power4.out' }
+      );
+    });
+  }
+
+  // Close Modal
+  const closeModal = () => {
+    gsap.to('.tyba-learning-content', { 
+      scale: 0.8, opacity: 0, duration: 0.4, 
+      onComplete: () => {
+        modal.classList.add('hidden');
+        if(iframe) iframe.src = '';
+      }
+    });
+  };
+
+  // Wire up Close button (X)
+  if(btnClose) {
+    btnClose.addEventListener('click', closeModal);
+  }
+
+  // Wire up Back to Modules button (legacy viewer)
+  if(btnBack) {
+    btnBack.addEventListener('click', () => {
+      viewer.classList.add('hidden');
+      modulesGrid.classList.remove('hidden');
+      renderModules();
+    });
+  }
+
+  // Render Module Grid (Cerebros Compactos con Sub-Opciones)
+  function renderModules() {
+    if (!modulesGrid) return;
+    modulesGrid.innerHTML = '';
+    
+    tybaModules.forEach((mod) => {
+      const brain = document.createElement('div');
+      brain.className = 'ai-brain-node master-node floating-brain';
+      brain.style.width = '120px';
+      brain.style.height = '120px';
+      brain.style.marginBottom = '55px';
+
+      brain.innerHTML = `
+        <div class="brain-glow" style="background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%); opacity: 0.6;"></div>
+        <img src="ai_brain_icon.png" alt="Brain Icon" class="brain-icon" style="width: 60px; height: 60px; filter: drop-shadow(0 0 15px var(--accent-cyan));">
+        <span class="brain-label" style="font-size: 0.55rem; color: #fff; width: 110px; font-weight: bold; text-align: center; white-space: normal; line-height: 1.2; word-wrap: break-word; overflow-wrap: break-word;">${mod.title}</span>
+      `;
+      
+      brain.addEventListener('click', () => {
+        if (mod.hasIntro) {
+          showIntroPanel(mod);
+        } else {
+          showSubOptions(mod);
+        }
+      });
+      
+      modulesGrid.appendChild(brain);
+
+      gsap.to(brain, {
+        y: '+=20',
+        duration: 2 + Math.random(),
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut'
+      });
+    });
+  }
+
+  // Función para mostrar el panel introductorio (Temario)
+  function showIntroPanel(mod) {
+    modulesGrid.innerHTML = '';
+    
+    const panel = document.createElement('div');
+    panel.style.width = '80%';
+    panel.style.maxWidth = '600px';
+    panel.style.background = 'rgba(0, 15, 30, 0.8)';
+    panel.style.border = '1px solid var(--accent-cyan)';
+    panel.style.borderRadius = '15px';
+    panel.style.padding = '30px';
+    panel.style.color = 'var(--accent-cyan)';
+    panel.style.textAlign = 'left';
+    panel.style.boxShadow = '0 0 30px rgba(0, 255, 255, 0.2), inset 0 0 20px rgba(0, 255, 255, 0.1)';
+    panel.style.position = 'relative';
+
+    // Generar la lista de temas
+    const listItems = mod.introList.map((item, index) => {
+      if (typeof item === 'object') {
+        return `<li class="clickable-topic" data-index="${index}" style="margin-bottom: 8px; font-size: 0.9rem; color: #fff; cursor: pointer; text-decoration: underline; transition: color 0.3s;"><span style="color: var(--accent-cyan);">➤</span> <span class="topic-text hover-cyan">${item.title}</span></li>`;
+      } else {
+        return `<li style="margin-bottom: 8px; font-size: 0.9rem; color: #fff;"><span style="color: var(--accent-cyan);">➤</span> ${item}</li>`;
+      }
+    }).join('');
+
+    const mediaButtonHtml = mod.noMedia ? '' : `
+      <div style="text-align: center; margin-top: 30px;">
+        <button id="btn-continue-visual" class="matrix-btn cyber-glitch-hover" style="font-size: 1rem; padding: 12px 25px;">ACCEDER AL MATERIAL VISUAL</button>
+      </div>
+    `;
+
+    panel.innerHTML = `
+      <style>
+        .hover-cyan:hover { color: var(--accent-cyan) !important; }
+      </style>
+      <h2 style="margin-top: 0; text-align: center; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 2px; border-bottom: 1px solid rgba(0, 255, 255, 0.3); padding-bottom: 15px;">${mod.title}</h2>
+      <p style="font-size: 1rem; color: #aaa; margin-top: 20px;">${mod.introText}</p>
+      <ul style="list-style: none; padding: 0; margin-top: 15px; max-height: 250px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--accent-cyan) rgba(0,0,0,0.5);">
+        ${listItems}
+      </ul>
+      ${mediaButtonHtml}
+    `;
+
+    modulesGrid.appendChild(panel);
+
+    // Animación de entrada
+    gsap.from(panel, { opacity: 0, y: 50, duration: 0.5, ease: 'power3.out' });
+
+    // Eventos para temas clicables
+    const clickableTopics = panel.querySelectorAll('.clickable-topic');
+    clickableTopics.forEach(topic => {
+      topic.addEventListener('click', (e) => {
+        const index = e.currentTarget.getAttribute('data-index');
+        const itemData = mod.introList[index];
+        gsap.to(panel, { 
+          opacity: 0, 
+          scale: 0.9, 
+          duration: 0.3, 
+          onComplete: () => showTopicDetailsPanel(mod, itemData) 
+        });
+      });
+    });
+
+    // Evento del botón para pasar a las opciones (PPT/Video)
+    if (!mod.noMedia) {
+      panel.querySelector('#btn-continue-visual').addEventListener('click', () => {
+        gsap.to(panel, { 
+          opacity: 0, 
+          scale: 0.9, 
+          duration: 0.3, 
+          onComplete: () => showSubOptions(mod) 
+        });
+      });
+    }
+
+    // Botón para volver a los módulos principales (si el usuario quiere cancelar)
+    const btnRegresar = document.createElement('button');
+    btnRegresar.className = 'tyba-back-btn';
+    btnRegresar.innerText = '← VOLVER A MÓDULOS';
+    btnRegresar.style.marginTop = '20px';
+    btnRegresar.style.display = 'block';
+    btnRegresar.style.marginLeft = 'auto';
+    btnRegresar.style.marginRight = 'auto';
+    
+    btnRegresar.addEventListener('click', () => {
+      renderModules();
+    });
+    
+    panel.appendChild(btnRegresar);
+  }
+
+  // Función para mostrar el detalle de un tema específico
+  function showTopicDetailsPanel(mod, itemData) {
+    modulesGrid.innerHTML = '';
+    
+    const panel = document.createElement('div');
+    panel.style.width = '80%';
+    panel.style.maxWidth = '700px';
+    panel.style.background = 'rgba(0, 15, 30, 0.9)';
+    panel.style.border = '1px solid var(--accent-cyan)';
+    panel.style.borderRadius = '15px';
+    panel.style.padding = '30px';
+    panel.style.color = '#fff';
+    panel.style.textAlign = 'left';
+    panel.style.boxShadow = '0 0 40px rgba(0, 255, 255, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.1)';
+    panel.style.position = 'relative';
+
+    const detailsMediaBtnHtml = mod.noMedia ? '' : `
+      <div style="text-align: center; margin-top: 30px;">
+        <button id="btn-continue-visual-details" class="matrix-btn cyber-glitch-hover" style="font-size: 1rem; padding: 12px 25px;">ACCEDER AL MATERIAL VISUAL</button>
+      </div>
+    `;
+
+    panel.innerHTML = `
+      <h2 style="margin-top: 0; color: var(--accent-cyan); text-transform: uppercase; font-size: 1.4rem; border-bottom: 1px solid rgba(0, 255, 255, 0.3); padding-bottom: 10px;">${itemData.title}</h2>
+      <div style="font-size: 1rem; line-height: 1.6; margin-top: 20px; max-height: 350px; overflow-y: auto; padding-right: 15px; scrollbar-width: thin; scrollbar-color: var(--accent-cyan) rgba(0,0,0,0.5);">
+        ${itemData.content}
+      </div>
+      ${detailsMediaBtnHtml}
+    `;
+
+    modulesGrid.appendChild(panel);
+
+    // Animación de entrada
+    gsap.from(panel, { opacity: 0, scale: 0.8, duration: 0.4, ease: 'back.out(1.2)' });
+
+    // Evento del botón para pasar a las opciones (PPT/Video)
+    if (!mod.noMedia) {
+      panel.querySelector('#btn-continue-visual-details').addEventListener('click', () => {
+        gsap.to(panel, { 
+          opacity: 0, 
+          scale: 1.1, 
+          duration: 0.3, 
+          onComplete: () => showSubOptions(mod) 
+        });
+      });
+    }
+
+    // Botón para volver al listado de temas
+    const btnRegresarLista = document.createElement('button');
+    btnRegresarLista.className = 'tyba-back-btn';
+    btnRegresarLista.innerText = '← VOLVER AL TEMARIO';
+    btnRegresarLista.style.marginTop = '20px';
+    btnRegresarLista.style.display = 'block';
+    btnRegresarLista.style.marginLeft = 'auto';
+    btnRegresarLista.style.marginRight = 'auto';
+    
+    btnRegresarLista.addEventListener('click', () => {
+      showIntroPanel(mod);
+    });
+    
+    panel.appendChild(btnRegresarLista);
+  }
+
+  // Función para mostrar las dos opciones (PPT y Video)
+  function showSubOptions(mod) {
+    modulesGrid.innerHTML = ''; // Limpiamos para mostrar sub-cerebros
+    
+    const options = [
+      { title: 'VISUALIZACIÓN POWERPOINT', url: mod.viewerUrl, icon: '📄' },
+      { title: 'VISUALIZACIÓN VIDEO', url: mod.videoUrl, icon: '🎥' }
+    ];
+
+    options.forEach(opt => {
+      const subBrain = document.createElement('div');
+      subBrain.className = 'ai-brain-node master-node floating-brain';
+      subBrain.style.width = '160px';
+      subBrain.style.height = '160px';
+      subBrain.style.margin = '30px';
+
+      subBrain.innerHTML = `
+        <div class="brain-glow" style="background: radial-gradient(circle, #fff 0%, transparent 70%); opacity: 0.3;"></div>
+        <div style="font-size: 3rem; margin-bottom: 10px;">${opt.icon}</div>
+        <span class="brain-label" style="font-size: 0.7rem; color: #fff; font-weight: bold;">${opt.title}</span>
+      `;
+
+      subBrain.addEventListener('click', () => {
+        if (opt.url) {
+          window.open(opt.url, '_blank');
+        } else {
+          alert('Próximamente: Contenido en preparación.');
+        }
+      });
+
+      modulesGrid.appendChild(subBrain);
+      
+      gsap.from(subBrain, { scale: 0, opacity: 0, duration: 0.5, ease: 'back.out(1.7)' });
+    });
+
+
+    // Botón para volver a los módulos principales
+    const btnRegresar = document.createElement('button');
+    btnRegresar.className = 'tyba-back-btn';
+    btnRegresar.innerText = '← VOLVER A MÓDULOS';
+    btnRegresar.style.marginTop = '40px';
+    btnRegresar.onclick = renderModules;
+    modulesGrid.appendChild(btnRegresar);
+  }
+
+
+
+}
+
+
+

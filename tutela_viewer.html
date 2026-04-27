@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISOR ANTIGRAVITY - REGISTRO DE TUTELA</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+        .viewer-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* MEGA PARCHE PARA LA MARCA DE AGUA (30% DEL ANCHO) */
+        .watermark-shield {
+            position: absolute;
+            bottom: 45px;
+            right: 0;
+            width: 30%; /* Ocupa casi un tercio de la página */
+            height: 65px;
+            background: #000;
+            z-index: 9999;
+            pointer-events: none;
+            border-left: 1px solid rgba(0, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="viewer-container">
+        <iframe src="https://docs.google.com/presentation/d/1Rqo5ZTdM79PkWZAWkN2qfo1NOAMR3OOX/embed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+        <div class="watermark-shield"></div>
+    </div>
+</body>
+</html>
